@@ -3,6 +3,8 @@ import Categoria from './page/categoria'
 import Login from './page/login'
 import PaginaInicio from './page/paginaInicio'
 import Registro from './page/registro'
+import React from 'react'
+import Ayuda from './page/ayuda'
 
 import './App.css'
 
@@ -16,6 +18,8 @@ function App() {
         <Route path="/login" element={<Login/>} />
         <Route path="/registro" element={<Registro/>} />
         <Route path="/categoria" element={<Categoria/>} />
+        <Route path="/ayuda" element={<Ayuda/>} />
+        
       </Routes>
     </BrowserRouter>
   )

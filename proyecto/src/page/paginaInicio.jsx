@@ -3,22 +3,31 @@ import '../styles/paginaInicio.css'
 import Noti1 from '../images/noti1.jpg'
 import Noti2 from '../images/noti2.jpg'
 import Noti3 from '../images/noti3.jpg'
-
+import {Link} from 'react-router-dom'
 
 export default function paginaInicio() {
   return (
     <>
+    
+
+
+
     <header>
         <h1> Bienvenido a Level-UP Gamer! </h1>
         <nav>
             
-            <a href="" >Registro </a>
-            &nbsp;| &nbsp;
-            <a href="" >Ayuda  </a>
-            &nbsp;| &nbsp;
-            <a href="" >Iniciar Sesion  </a>
-            &nbsp;| &nbsp;
-            <a href="" >Categorias  </a>
+            <Link to = "/ayuda">
+        <button className='btnAyuda'>Ayuda</button>
+    </Link>
+    <Link to = "/categoria">
+        <button className='btnCategoria'>Categorias</button>
+    </Link>
+    <Link to = "/registro">
+        <button className='btnRegistro'>Registro</button>
+    </Link>
+    <Link to = "/login">
+        <button className='btnLogin'>Login</button>
+    </Link>
 
         </nav>
     </header>

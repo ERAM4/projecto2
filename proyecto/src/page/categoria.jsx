@@ -1,4 +1,5 @@
 import React from 'react'
+import {Link} from 'react-router-dom'
 
 export default function categoria() {
   return (
@@ -6,13 +7,18 @@ export default function categoria() {
     <header>
         <h1> Categorias </h1>
         <nav>
-            <a href="" >Inicio  </a>
-            &nbsp;| &nbsp;
-            <a href="" >Registro </a>
-            &nbsp;| &nbsp;
-            <a href="" >Ayuda  </a>
-            &nbsp;| &nbsp;
-            <a href="" >Iniciar Sesion  </a>
+        <Link to = "/ayuda">
+        <button className='btnAyuda'>Ayuda</button>
+    </Link>
+    <Link to = "/">
+        <button className='btnInicio'>Inicio</button>
+    </Link>
+    <Link to = "/registro">
+        <button className='btnRegistro'>Registro</button>
+    </Link>
+    <Link to = "/login">
+        <button className='btnLogin'>Login</button>
+    </Link>
             
 
         </nav>
