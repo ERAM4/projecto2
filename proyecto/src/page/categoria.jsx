@@ -25,13 +25,13 @@ export default function categoria() {
     </header>
     <footer>
     <p>© 2025 Level-UP Gamer
-    <br />
+    
         Para Ayuda:</p>
-    <a href="https://www.facebook.com/henrycavill/" >Facebook</a>
+    <p>Redes Sociales:<a href="https://www.facebook.com/henrycavill/" >Facebook</a>
     &nbsp;| &nbsp;
-    <a href="https://www.instagram.com/henrycavill/" >Instagram</a>
-    &nbsp;| &nbsp;
-    <a href="https://wa.me/56912345678" >Whatsaap</a>
+    <a href="https://www.instagram.com/henrycavill/" >Instagram</a> </p>
+    <p>Contacto:<a href="https://wa.me/56912345678" >Whatsaap</a> </p>
+    
 
 
 

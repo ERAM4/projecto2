@@ -33,7 +33,10 @@ export default function paginaInicio() {
     </header>
     <article>
         <img src={Noti1} alt="" />
-        <p>Disco Elysium fue uno de los juegos más queridos de 2019 
+        <p>
+            <a href="https://vandal.elespanol.com/noticia/1350778969/hopetown-uno-de-los-muchos-sucesores-de-disco-elysium-ya-ha-sido-financiado-en-kickstarter/"
+            >Disco Elysium </a>
+            fue uno de los juegos más queridos de 2019 
             y el declive de su estudio fue una triste noticia para sus fans.
              Sin embargo, algunos exempleados han formado nuevos equipos y 
              ahora tenemos varios sucesores espirituales; uno de ellos, Hopetown, 
@@ -43,8 +46,9 @@ export default function paginaInicio() {
         <img src={Noti2} alt="" />
         <p>Si buscas una aventura indie cooperativa, 
             original y con mucho encanto para este otoño, 
-            entonces presta atención a Unrailed 2: Back on Track, cuyo estreno en PC es inminente.
-
+            entonces presta atención a <a href="https://as.com/meristation/mexico/unrailed-2-back-on-track-revela-nuevas-caracteristicas-y-su-fecha-de-lanzamiento-n/
+            Esta es la secuela para un carismático juego de acción y e">Unrailed 2: Back on Track</a>, cuyo estreno en PC es inminente.
+            
             Esta es la secuela para un carismático juego de acción y e
             strategia cooperativo, el cual te pone a construir vías de tren,
              con el pequeño detalle de que la locomotora que corre sobre ellas nunca se detiene. 
@@ -56,8 +60,9 @@ export default function paginaInicio() {
             Esta expansión continúa la aventura tras el lanzamiento de 
             cohetes al espacio, permitiendo gestionar plataformas espaciales y 
             explorar nuevos planetas, que ofrecen nuevos desafíos y posibilidades.
-
-            Factorio (2020) es un exitoso juego de simulación y gestión en el que tenemos que construir y gestionan fábricas automatizadas en un planeta alienígena, acaba de lanzar hoy su primera expansión titulada Factorio: Space Age, que ya está a la venta en Steam.
+            <a href="https://vandal.elespanol.com/noticia/1350775116/el-popular-factorio-se-expande-al-espacio-con-su-nuevo-dlc-que-ya-esta-disponible-en-steam/"
+             >Factorio (2020)</a>
+             es un exitoso juego de simulación y gestión en el que tenemos que construir y gestionan fábricas automatizadas en un planeta alienígena, acaba de lanzar hoy su primera expansión titulada Factorio: Space Age, que ya está a la venta en Steam.
         </p>
     </article>
     <article>
@@ -71,18 +76,18 @@ export default function paginaInicio() {
      </iframe>
     </article>
     <footer>
-        <p>© 2025 Level-UP Gamer
-        <br />
-            Para Ayuda:</p>
-        <a href="https://www.facebook.com/henrycavill/" >Facebook</a>
-        &nbsp;| &nbsp;
-        <a href="https://www.instagram.com/henrycavill/" >Instagram</a>
-        &nbsp;| &nbsp;
-        <a href="https://wa.me/56912345678" >Whatsaap</a>
+    <p>© 2025 Level-UP Gamer
+    <br />
+        Para Ayuda:</p>
+    <p>Redes Sociales:<a href="https://www.facebook.com/henrycavill/" >Facebook</a>
+    &nbsp;| &nbsp;
+    <a href="https://www.instagram.com/henrycavill/" >Instagram</a> </p>
+    <p>Contacto:<a href="https://wa.me/56912345678" >Whatsaap</a> </p>
     
 
 
-    </footer>
+
+</footer>
     
     </>
   )
