@@ -23,6 +23,8 @@ export default function categoria() {
 
         </nav>
     </header>
+
+    
     <footer>
     <p>© 2025 Level-UP Gamer
     

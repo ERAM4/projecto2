@@ -24,33 +24,33 @@ export default function ayuda() {
     <Link to = "/login">
         <button className='btnLogin'>Login</button>
     </Link>
-        
+        </nav>
+    </header>    
     
     <article>
         <h1>🎮Quienes Somos?</h1>
-    <p>Level-Up Gamer es una tienda online dedicada a satisfacer las necesidades de los entusiastas de los
-videojuegos en Chile. Lanzada hace dos años como respuesta a la creciente demanda durante la
-pandemia, Leves-Up Gamer ofrece una amplia gama de productos para gamers, desde consolas y
-accesorios hasta computadores y sillas especializadas. Aunque no cuenta con una ubicación física,
-realiza despachos a todo el país.</p>
+            <p>Level-Up Gamer es una tienda online dedicada a satisfacer las necesidades de los entusiastas de los
+            videojuegos en Chile. Lanzada hace dos años como respuesta a la creciente demanda durante la
+            pandemia, Leves-Up Gamer ofrece una amplia gama de productos para gamers, desde consolas y
+            accesorios hasta computadores y sillas especializadas. Aunque no cuenta con una ubicación física,
+r           ealiza despachos a todo el país.</p>
         <img src={Ayuda1} alt="" />
     </article>
     <article>
         <h1>🎯Cual es Nuestra Mision?</h1>
-    <p>Proporcionar productos de alta calidad para gamers en todo Chile, ofreciendo una experiencia de
-compra única y personalizada, con un enfoque en la satisfacción del cliente y el crecimiento de la
-comunidad gamer.</p>
+            <p>Proporcionar productos de alta calidad para gamers en todo Chile, ofreciendo una experiencia de
+            compra única y personalizada, con un enfoque en la satisfacción del cliente y el crecimiento de la
+            comunidad gamer.</p>
         <img src={Ayuda2} alt="" />
     </article>
     <article>
         <h1>🎲Cual es Nuestra Vision?</h1>
-    <p>Ser la tienda online líder en productos para gamers en Chile, reconocida por su innovación, servicio
-al cliente excepcional, y un programa de fidelización basado en gamificación que recompense a
-nuestros clientes más fieles.</p>
-<img src={Ayuda3} alt="" />
+            <p>Ser la tienda online líder en productos para gamers en Chile, reconocida por su innovación, servicio
+            al cliente excepcional, y un programa de fidelización basado en gamificación que recompense a
+            nuestros clientes más fieles.</p>
+        <img src={Ayuda3} alt="" />
     </article>
-        </nav>
-    </header>
+        
     <footer>
     <p>© 2025 Level-UP Gamer
     <br />
