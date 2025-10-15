@@ -24,10 +24,10 @@ export default function categoria() {
         </nav>
     </header>
 
-    
+
     <footer>
     <p>© 2025 Level-UP Gamer
-    
+    <br />
         Para Ayuda:</p>
     <p>Redes Sociales:<a href="https://www.facebook.com/henrycavill/" >Facebook</a>
     &nbsp;| &nbsp;
