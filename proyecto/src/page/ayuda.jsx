@@ -3,12 +3,13 @@ import {Link} from 'react-router-dom'
 import Ayuda1 from '../images/ayuda1.jpg'
 import Ayuda2 from '../images/ayuda2.jpg'
 import Ayuda3 from '../images/ayuda3.jpg'
-
+import  '../styles/paginaInicio.css'
 export default function ayuda() {
   return (
     <>
     <header>
         <h1> Ayuda </h1>
+        
         <nav>
     <Link to = "/">
         <button className='btnInicio'>Inicio</button>
@@ -23,7 +24,8 @@ export default function ayuda() {
     <Link to = "/login">
         <button className='btnLogin'>Login</button>
     </Link>
-            
+        
+    
     <article>
         <h1>🎮Quienes Somos?</h1>
     <p>Level-Up Gamer es una tienda online dedicada a satisfacer las necesidades de los entusiastas de los

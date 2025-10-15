@@ -2,7 +2,6 @@
 * {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
 }
 
 /* --- FONDO Y FUENTE --- */
@@ -25,6 +24,11 @@ body {
 
 /* --- HEADER --- */
 header {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom:2.5rem ;
   text-align: center;
   padding: 2rem;
   background-color: rgba(0, 0, 0, 0.7);
@@ -40,7 +44,7 @@ header h1 {
 
 /* --- NAVEGACIÓN --- */
 nav {
-  margin-top: 1rem;
+  
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
@@ -69,7 +73,7 @@ nav button:hover {
 /* --- ARTÍCULOS DE NOTICIAS --- */
 article {
   max-width: 900px;
-  margin: 2rem auto;
+  margin: 0 auto 2rem auto;
   background-color: rgba(0, 0, 0, 0.7);
   border-radius: 15px;
   padding: 1.5rem;
@@ -127,16 +131,19 @@ iframe {
 
 /* --- FOOTER --- */
 footer {
+  margin-top:2.5rem ;
+  height: 30%;
+  width: auto;
   background: rgba(0, 0, 0, 0.85);
   text-align: center;
-  padding: 2rem 1rem;
+  padding: 2rem ;
   border-top: 2px solid cyan;
   color: #ccc;
   box-shadow: 0 0 20px rgba(0, 255, 255, 0.2);
 }
 
 footer p {
-  margin: 0.5rem 0;
+  
   font-size: 0.95rem;
 }
 
