@@ -12,6 +12,9 @@ import Poleronesgamer from '../images/poleronesgamer.jpg'
 import Polera1 from '../images/polera1.jpg'
 import Silla1 from '../images/silla1.jpg'
 
+import Mouse from '../page/mouse.jsx'
+import Consolas from '../page/consolas.jsx'
+import Computadora from '../page/computadora.jsx'
 import Accesorios from '../page/accesorios.jsx'
 import Juegodemesa from '../page/juegodemesa.jsx'
 
@@ -47,12 +50,13 @@ export default function categoria() {
         <Link to="/accesorios" > <p>Accesorios</p>   </Link >
     </article>
     <article>
-        <img src={Computadora1} alt="" />        
-        <p>Computadores Gamers</p>
+        <img src={Computadora1} alt="" />   
+        <Link to="/computadora"  > <p>Computadoras Gamer</p>   </Link >      
+        
     </article>
     <article>
         <img src={Consolas11} alt="" />        
-        <p>Consolas</p>
+        <Link to="/consolas"  > <p>Consolas</p>   </Link >
     </article>
     <article>
         <img src={Juegodemesa1} alt="" />  
@@ -61,11 +65,11 @@ export default function categoria() {
     </article>
     <article>
         <img src={Mousegamer1} alt="" />        
-        <p>Mouse</p>
+        <Link to="/mouse" > <p>Mouse Gamer</p>   </Link >
     </article>
     <article>
         <img src={Mousepadgamer1} alt="" />        
-        <p>Mousepad</p>
+        <Link to="/mousepad" > <p>Mouse Pad</p>   </Link >
     </article>
     <article>
         <img src={Poleronesgamer} alt="" />        

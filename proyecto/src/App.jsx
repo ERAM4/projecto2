@@ -6,6 +6,10 @@ import Registro from './page/registro'
 import React from 'react'
 import Ayuda from './page/ayuda'
 
+import Mousepad from './page/mousepad'
+import Mouse from './page/mouse'
+import Consolas from './page/consolas'
+import Computadora from './page/computadora'
 import Juegodemesa from './page/juegodemesa'
 import Accesorios from './page/accesorios'
 import Carrito from './page/carrito'
@@ -25,6 +29,10 @@ function App() {
         <Route path ="/carrito" element={<Carrito/>}/>
         <Route path ="/accesorios" element={<Accesorios/>}/>
         <Route path ="/juegodemesa" element={<Juegodemesa/>}/>
+        <Route path ="/computadora" element={<Computadora/>}/>
+        <Route path ="/consolas" element={<Consolas/>}/>
+        <Route path ="/mouse" element={<Mouse/>}/>
+        <Route path ="/mousepad" element={<Mousepad/>}/>
       
       </Routes>
     </BrowserRouter>

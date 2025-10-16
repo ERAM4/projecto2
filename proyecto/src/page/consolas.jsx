@@ -2,13 +2,11 @@ import React from 'react'
 import '../styles/categorias.css'
 import {Link} from 'react-router-dom' 
 
-
-
-export default function accesorios() {
+export default function consolas() {
   return (
     <>
     <header>
-        <h1> Accesorios  </h1>
+        <h1> Consolas </h1>
         <nav>
         <Link to = "/ayuda">
         <button className='btnAyuda'>Ayuda</button>
