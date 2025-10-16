@@ -6,6 +6,7 @@ import Registro from './page/registro'
 import React from 'react'
 import Ayuda from './page/ayuda'
 
+import Carrito from './page/carrito'
 import './App.css'
 
 function App() {
@@ -19,7 +20,8 @@ function App() {
         <Route path="/registro" element={<Registro/>} />
         <Route path="/categoria" element={<Categoria/>} />
         <Route path="/ayuda" element={<Ayuda/>} />
-        
+        <Route path ="/carrito" element={<Carrito/>}/>
+      
       </Routes>
     </BrowserRouter>
   )

@@ -30,6 +30,9 @@ export default function paginaInicio() {
     <Link to = "/login">
         <button className='btnLogin'>Login</button>
     </Link>
+    <Link to = "/carrito">
+            <button className='btnCarrito'>carrito</button>
+        </Link>
 
         </nav>
     </header>
@@ -63,7 +66,7 @@ export default function paginaInicio() {
             cohetes al espacio, permitiendo gestionar plataformas espaciales y 
             explorar nuevos planetas, que ofrecen nuevos desafíos y posibilidades.
             <a href="https://vandal.elespanol.com/noticia/1350775116/el-popular-factorio-se-expande-al-espacio-con-su-nuevo-dlc-que-ya-esta-disponible-en-steam/"
-             >Factorio (2020)</a>
+             >Factorio (2020) </a>
              es un exitoso juego de simulación y gestión en el que tenemos que construir y gestionan fábricas automatizadas en un planeta alienígena, acaba de lanzar hoy su primera expansión titulada Factorio: Space Age, que ya está a la venta en Steam.
         </p>
     </article>

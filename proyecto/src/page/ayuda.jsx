@@ -24,6 +24,9 @@ export default function ayuda() {
     <Link to = "/login">
         <button className='btnLogin'>Login</button>
     </Link>
+    <Link to = "/carrito">
+            <button className='btnCarrito'>carrito</button>
+        </Link>
         </nav>
     </header>    
     
