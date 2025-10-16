@@ -4,6 +4,7 @@ import {Link} from 'react-router-dom'
 import Juegomesa111 from '../images/juegomesa111.jpg';
 import Juegomesa222 from '../images/juegomesa222.jpg';
 import Juegomesa333 from '../images/juegomesa333.jpg';
+import Juegomesa444 from '../images/juegomesa444.jpg';
 
 export default function juegodemesa() {
   return (
@@ -72,6 +73,21 @@ export default function juegodemesa() {
 
 
     </article>
+    
+    <article>
+     <img src={Juegomesa444} alt="" />   
+     <h2>Catan</h2>
+                <p >29.990</p>
+                <p>Juego de mesa Clasico de estrategia 
+                    en el que los jugadores compiten 
+                    por colonizar una isla rica en recursos,
+                     construyendo asentamientos, 
+                     ciudades y carreteras para alcanzar los 10 puntos de victoria. </p>
+
+
+    </article>
+
+
     <footer>
     <p>© 2025 Level-UP Gamer
     <br />
