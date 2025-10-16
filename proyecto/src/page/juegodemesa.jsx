@@ -5,6 +5,7 @@ import Juegomesa111 from '../images/juegomesa111.jpg';
 import Juegomesa222 from '../images/juegomesa222.jpg';
 import Juegomesa333 from '../images/juegomesa333.jpg';
 import Juegomesa444 from '../images/juegomesa444.jpg';
+import Juegomesa555 from '../images/juegomesa555.jpg';
 
 export default function juegodemesa() {
   return (
@@ -83,6 +84,18 @@ export default function juegodemesa() {
                     por colonizar una isla rica en recursos,
                      construyendo asentamientos, 
                      ciudades y carreteras para alcanzar los 10 puntos de victoria. </p>
+
+
+    </article>
+    <article>
+     <img src={Juegomesa555} alt="" />   
+     <h2>Jumanji</h2>
+                <p >34.990</p>
+                <p>Este juego te llevará a un mundo lleno de peligros y desafíos.
+                     Supera obstáculos, enfrenta animales salvajes 
+                     y trabaja en equipo para alcanzar la victoria. 
+                     ¡Ofrece diversión para toda la familia y te transporta 
+                     a una emocionante aventura que nunca olvidarás! </p>
 
 
     </article>
