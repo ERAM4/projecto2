@@ -31,6 +31,8 @@ export default function consolas() {
         </nav>
     </header>
 
+
+
     <footer>
     <p>© 2025 Level-UP Gamer
     <br />

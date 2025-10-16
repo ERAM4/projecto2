@@ -6,6 +6,9 @@ import Registro from './page/registro'
 import React from 'react'
 import Ayuda from './page/ayuda'
 
+import Silla from './page/silla'
+import Poleras from './page/poleras'
+import Polerones from './page/polerones'
 import Mousepad from './page/mousepad'
 import Mouse from './page/mouse'
 import Consolas from './page/consolas'
@@ -33,6 +36,9 @@ function App() {
         <Route path ="/consolas" element={<Consolas/>}/>
         <Route path ="/mouse" element={<Mouse/>}/>
         <Route path ="/mousepad" element={<Mousepad/>}/>
+        <Route path ="/polerones" element={<Polerones/>}/>
+        <Route path ="/poleras" element={<Poleras/>}/>
+        <Route path ="/silla" element={<Silla/>}/>
       
       </Routes>
     </BrowserRouter>

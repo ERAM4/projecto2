@@ -12,6 +12,9 @@ import Poleronesgamer from '../images/poleronesgamer.jpg'
 import Polera1 from '../images/polera1.jpg'
 import Silla1 from '../images/silla1.jpg'
 
+import Silla from '../page/silla.jsx'
+import Poleras from '../page/poleras.jsx'
+import Polerones from '../page/polerones.jsx'
 import Mouse from '../page/mouse.jsx'
 import Consolas from '../page/consolas.jsx'
 import Computadora from '../page/computadora.jsx'
@@ -22,6 +25,7 @@ import Juegodemesa from '../page/juegodemesa.jsx'
 export default function categoria() {
   return (
     <>
+
     <header>
         <h1> Categorias </h1>
         <nav>
@@ -44,7 +48,9 @@ export default function categoria() {
 
         </nav>
     </header>
+    <div className="contenedorCategoria">
 
+    
     <article>
         <img src={Accesorio1} alt="" />      
         <Link to="/accesorios" > <p>Accesorios</p>   </Link >
@@ -73,17 +79,17 @@ export default function categoria() {
     </article>
     <article>
         <img src={Poleronesgamer} alt="" />        
-        <p>Polerones Gamers Personalizados</p>
+        <Link to="/polerones" > <p>Polerones Gamers Personalizados</p>   </Link >
     </article>
     <article>
         <img src={Polera1} alt="" />        
-        <p>Poleras Personalizadas</p>
+        <Link to="/poleras" > <p>Poleras Personalizadas</p>   </Link >
     </article>
     <article>
         <img src={Silla1 } alt="" />        
-        <p>Sillas Gamers</p>
+        <Link to="/silla" > <p>Sillas</p>   </Link >
     </article>
-
+        </div>
 
     <footer>
     <p>© 2025 Level-UP Gamer
