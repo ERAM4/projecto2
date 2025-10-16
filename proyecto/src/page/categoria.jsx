@@ -1,6 +1,7 @@
 import React from 'react'
 import {Link} from 'react-router-dom' 
 import '../styles/categorias.css'
+
 import Accesorio1 from '../images/accesorio1.jpg'
 import Computadora1 from '../images/computadora1.jpg'
 import Consolas11 from '../images/consolas11.jpg'
@@ -11,7 +12,8 @@ import Poleronesgamer from '../images/poleronesgamer.jpg'
 import Polera1 from '../images/polera1.jpg'
 import Silla1 from '../images/silla1.jpg'
 
-
+import Accesorios from '../page/accesorios.jsx'
+import Juegodemesa from '../page/juegodemesa.jsx'
 
 
 export default function categoria() {
@@ -41,8 +43,8 @@ export default function categoria() {
     </header>
 
     <article>
-        <img src={Accesorio1} alt="" />        
-        <p>Accesorios</p>
+        <img src={Accesorio1} alt="" />      
+        <Link to="/accesorios" > <p>Accesorios</p>   </Link >
     </article>
     <article>
         <img src={Computadora1} alt="" />        
@@ -53,8 +55,9 @@ export default function categoria() {
         <p>Consolas</p>
     </article>
     <article>
-        <img src={Juegodemesa1} alt="" />        
-        <p>Juegos de Mesa</p>
+        <img src={Juegodemesa1} alt="" />  
+        <Link to="/juegodemesa" > <p>Juegos De mesa</p>   </Link >      
+        
     </article>
     <article>
         <img src={Mousegamer1} alt="" />        

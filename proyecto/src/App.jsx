@@ -6,6 +6,8 @@ import Registro from './page/registro'
 import React from 'react'
 import Ayuda from './page/ayuda'
 
+import Juegodemesa from './page/juegodemesa'
+import Accesorios from './page/accesorios'
 import Carrito from './page/carrito'
 import './App.css'
 
@@ -21,6 +23,8 @@ function App() {
         <Route path="/categoria" element={<Categoria/>} />
         <Route path="/ayuda" element={<Ayuda/>} />
         <Route path ="/carrito" element={<Carrito/>}/>
+        <Route path ="/accesorios" element={<Accesorios/>}/>
+        <Route path ="/juegodemesa" element={<Juegodemesa/>}/>
       
       </Routes>
     </BrowserRouter>

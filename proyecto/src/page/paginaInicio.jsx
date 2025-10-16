@@ -10,8 +10,6 @@ export default function paginaInicio() {
     <>
     
 
-
-
     <header>
         <h1> Bienvenido a Level-UP Gamer! </h1>
 
