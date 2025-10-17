@@ -1,6 +1,11 @@
 import React from 'react'
 import '../styles/categorias.css'
 import {Link} from 'react-router-dom' 
+import Polera111 from '../images/polera111.jpg'
+import Polera222 from '../images/polera222.jpg'
+import Polera333 from '../images/polera333.jpg'
+
+
 
 export default function poleras() {
   return (
@@ -30,7 +35,27 @@ export default function poleras() {
 
         </nav>
     </header>
-
+    <article>
+        <img src={Polera111 } alt="" />
+        <h2>Polera SI LO VE ¡DENUNCIELO! </h2>
+        <p >13.000</p>
+        <p>
+         Polera para denunciar a un delincuente por estafa, fraude al fisco, homicidio de 3°, robo a mano armada, canibalismo, delitos contra la propiedad y traición a la patria. </p>
+        </article>
+    <article>
+        <img src={Polera222 } alt="" />
+        <h2>Polera ultra seria </h2>
+        <p >10.000.000</p>
+        <p>
+         Un verdadero hombre no paga el cae 🙏. </p>
+        </article>
+    <article>
+        <img src={Polera333 } alt="" />
+        <h2>Polera BABY DON´T HURT ME,DON´T HURT ME, NO MORE </h2>
+        <p >24.990</p>
+        <p>
+         Polera del BABY DON´T HURT ME, DON´T HURT ME, NO MORE. </p>
+        </article>
     <footer>
     <p>© 2025 Level-UP Gamer
     <br />

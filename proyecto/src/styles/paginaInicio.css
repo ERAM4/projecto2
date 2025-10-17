@@ -8,7 +8,8 @@
 body {
   font-family: 'Orbitron', sans-serif;
   color: #f5f5f5;
-  background: linear-gradient(90deg, rgba(2,0,36,1) 0%, 
+  background: linear-gradient(90deg, rgba(2,0,36,1) 0%,
+                              rgb(18, 64, 216)75% 
                               rgba(9,9,121,1) 35%, 
                               rgb(0, 0, 0) 100%, 
                               rgba(0,212,255,1) 100%);

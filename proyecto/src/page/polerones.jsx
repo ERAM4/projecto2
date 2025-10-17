@@ -1,6 +1,9 @@
 import React from 'react'
 import '../styles/categorias.css'
 import {Link} from 'react-router-dom' 
+import Poleron111 from '../images/poleron111.jpg'
+import Poleron222 from '../images/poleron222.jpg'
+
 
 export default function polerones() {
   return (
@@ -30,6 +33,22 @@ export default function polerones() {
 
         </nav>
     </header>
+
+    <article>
+                <img src={Poleron111 } alt="" />
+                <h2>Poleron Gamer Nintendo 64 </h2>
+                <p >49.990</p>
+                <p>
+                Poleron Gamer de la famosa consola Nintendo 64.</p>
+                </article>
+        
+                <article>
+                <img src={Poleron222 } alt="" />
+                <h2>Poleron Gamer de Shrek</h2>
+                <p >39.990</p>
+                <p>
+                 Poleron Gamer del famoso Shrek, waos. </p>
+                </article>
 
     <footer>
     <p>© 2025 Level-UP Gamer
