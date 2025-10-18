@@ -1,11 +1,15 @@
 import React from 'react'
-import '../styles/paginaInicio.css'
+import '../styles/categorias.css'
 import {Link} from 'react-router-dom'
 
 
 
 
 export default function carrito() {
+ const productsInCart = JSON.parse(localStorage.getItem("cart")) || [];
+ const totalCarrito = productsInCart.reduce((total, product) => total + parseInt(product.price), 0);
+ 
+
   return (
     <>
     <header>
@@ -32,10 +36,48 @@ export default function carrito() {
     </header>
     
 
-    <article>
-    
 
-    </article>
+
+    <button onClick={()=>{
+
+        localStorage.removeItem("cart");
+        window.location.reload();
+
+
+    }}>Vacias Carrito</button>
+
+    <div>
+
+
+
+    {
+        productsInCart.length === 0 ? (
+            <p>El carrito está vacío.</p>
+        ) : (<>{
+                <>
+                <p>Productos en el carrito:{productsInCart.length}</p>
+                <p>Total:$ { totalCarrito}</p>
+                </>
+                }
+
+            {productsInCart.map((product, index) => (
+                <article key={index}>
+                    <img src={product.imageUrl} alt={product.name} />
+                    <h2>{product.name}</h2>
+                    <p>${product.price}</p>
+                    <p>{product.description}</p>
+                    <button onClick={()=>{removeProductFromCart(index)}}>✖</button>
+                </article>
+            ))}
+      </>
+
+            
+       )
+
+    }
+
+    </div>
+    
 
     <footer>
     <p>© 2025 Level-UP Gamer
@@ -53,4 +95,10 @@ export default function carrito() {
 </>
     
   )
+}
+
+function removeProductFromCart(index) {
+    const productsInCart = JSON.parse(localStorage.getItem("cart")) || [];
+    productsInCart.splice(index, 1);
+    localStorage.setItem("cart", JSON.stringify(productsInCart));
 }

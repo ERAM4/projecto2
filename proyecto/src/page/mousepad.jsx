@@ -3,7 +3,7 @@ import '../styles/categorias.css'
 import {Link} from 'react-router-dom' 
 import Mousepad111 from '../images/mousepad111.jpg'
 import Mousepad222 from '../images/mousepad222.jpg'
-
+import Product from '../components/Product'
 
 export default function mousepad() {
   return (
@@ -34,21 +34,21 @@ export default function mousepad() {
         </nav>
     </header>
 
-    <article>
-            <img src={Mousepad111 } alt="" />
-            <h2>Mouse Pad Nicolas Cage </h2>
-            <p >100.000</p>
-            <p>
-            Mouse pad de uno de los mas conocidos en la industria de las peliculas. </p>
-            </article>
+    <Product
+        name="Mouse Pad Nicolas Cage "
+        price={100000}
+        description="Mouse pad de uno de los mas conocidos en la industria de las peliculas. "
+        imageUrl={Mousepad111 }
+    />
+    <Product
+        name="Mouse Pad WHAT IS LOVE? "
+        price={349990}
+        description="What is love? Oh, baby, don't hurt me Don't hurt me no more Oh, baby, don't hurt me Don't hurt me no more "
+        imageUrl={Mousepad222 }
+    />
+
+
     
-            <article>
-            <img src={Mousepad222 } alt="" />
-            <h2>Mouse Pad WHAT IS LOVE?</h2>
-            <p >349.990</p>
-            <p>
-             What is love? Oh, baby, don't hurt me Don't hurt me no more Oh, baby, don't hurt me Don't hurt me no more </p>
-            </article>
 
     <footer>
     <p>© 2025 Level-UP Gamer

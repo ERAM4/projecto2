@@ -4,6 +4,7 @@ import {Link} from 'react-router-dom'
 import Silla111 from '../images/silla111.jpg'
 import Silla222 from '../images/silla222.jpg'
 
+import Product from '../components/Product'
 
 
 export default function silla() {
@@ -35,22 +36,21 @@ export default function silla() {
         </nav>
     </header>
 
-    <article>
-    <img src={Silla111 } alt="" />
-    <h2>Silla Game Cockpit de Oficina y Juego, Ergonómica, Diseño Scorpion de Cápsula Espacial, para Computadora y Ver Video </h2>
-    <p >9.931.641</p>
-    <p>
-     Una silla gaming for cabina de ordenador con forma de escorpión adecuada for 
-     jugadores profesionales y trabajadores de oficina, que puede colgar hasta 3 pantallas 
-     y tiene una tira de luz RGB ajustable de 16 colores incorporada en la cabina. </p>
-    </article>
-    <article>
-    <img src={Silla222 } alt="" />
-    <h2>Silla Gamer Premium </h2>
-    <p >10.000.000</p>
-    <p>
-     Una silla gaming Premium de un plastico resistente y de la mas alta calidad, perfecta para jugar y descansar, la silla perfecta para todo. </p>
-    </article>
+    <Product
+        name="Silla Game Cockpit de Oficina y Juego, Ergonómica, Diseño Scorpion de Cápsula Espacial, para Computadora y Ver Video "
+        price={9931641}
+        description="Una silla gaming for cabina de ordenador con forma de escorpión adecuada for 
+        jugadores profesionales y trabajadores de oficina, que puede colgar hasta 3 pantallas 
+        y tiene una tira de luz RGB ajustable de 16 colores incorporada en la cabina. "
+        imageUrl={Silla111 }
+        />
+    <Product
+        name="Silla Gamer Premium "
+        price={100000}
+        description="Una silla gaming Premium de un plastico resistente y de la mas alta calidad, perfecta para jugar y descansar, la silla perfecta para todo. "
+        imageUrl={Silla222 }
+        />
+
 
     <footer>
     <p>© 2025 Level-UP Gamer

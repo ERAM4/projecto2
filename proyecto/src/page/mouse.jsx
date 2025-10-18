@@ -3,7 +3,7 @@ import '../styles/categorias.css'
 import {Link} from 'react-router-dom' 
 import Mouse111 from '../images/mouse111.jpg'
 import Mouse222 from '../images/mouse222.jpg'
-
+import Product from '../components/Product'
 
 export default function mouse() {
   return (
@@ -34,27 +34,26 @@ export default function mouse() {
         </nav>
     </header>
 
-     <article>
-        <img src={Mouse111 } alt="" />
-        <h2>Razer Cobra Pro </h2>
-        <p >152.990</p>
-        <p>
-        El Razer Cobra Pro Blanco es un ratón gaming inalámbrico diseñado para ofrecer un
-         rendimiento excepcional y una personalización avanzada. Con 10 botones personalizables 
-         y un sensor óptico Razer Focus Pro de 30,000 PPP, este ratón proporciona precisión 
-         y control en cada movimiento. Su diseño ligero de 77 gramos y las 11 zonas de iluminación
-          Chroma RGB con iluminación inferior completa añaden una experiencia visual envolvente. </p>
-        </article>
-
-        <article>
-        <img src={Mouse222 } alt="" />
-        <h2>Logitech G502 X Plus - Black (910-006161)</h2>
-        <p >141.990</p>
-        <p>
-         Diseñado para un desempeño avanzado en los juegos. G502 X Plus 
-         cuenta con un sensor de juegos HERO 25K con seguimiento de precisión submicrométrica, 
-         LIGHTSYNC RGB personalizable, perfiles integrados, pesos reposicionables y mucho más. </p>
-        </article>
+    <Product 
+    name="Razer Cobra Pro "
+    price={152990}
+    description="El Razer Cobra Pro Blanco es un ratón gaming inalámbrico diseñado para ofrecer un
+     rendimiento excepcional y una personalización avanzada. Con 10 botones personalizables 
+     y un sensor óptico Razer Focus Pro de 30,000 PPP, este ratón proporciona precisión 
+     y control en cada movimiento. Su diseño ligero de 77 gramos y las 11 zonas de iluminación
+      Chroma RGB con iluminación inferior completa añaden una experiencia visual envolvente. "
+    imageUrl={Mouse111 }
+    
+    />
+    <Product
+    name="Logitech G502 X Plus - Black (910-006161)"
+    price={141990}
+    description=" Diseñado para un desempeño avanzado en los juegos. G502 X Plus
+        cuenta con un sensor de juegos HERO 25K con seguimiento de precisión submicrométrica,
+        LIGHTSYNC RGB personalizable, perfiles integrados, pesos reposicionables y mucho más. "
+    imageUrl={Mouse222 }
+    />
+     
 
     <footer>
     <p>© 2025 Level-UP Gamer

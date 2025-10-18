@@ -3,7 +3,7 @@ import '../styles/categorias.css'
 import {Link} from 'react-router-dom' 
 import Poleron111 from '../images/poleron111.jpg'
 import Poleron222 from '../images/poleron222.jpg'
-
+import Product from '../components/Product'
 
 export default function polerones() {
   return (
@@ -34,21 +34,21 @@ export default function polerones() {
         </nav>
     </header>
 
-    <article>
-                <img src={Poleron111 } alt="" />
-                <h2>Poleron Gamer Nintendo 64 </h2>
-                <p >49.990</p>
-                <p>
-                Poleron Gamer de la famosa consola Nintendo 64.</p>
-                </article>
-        
-                <article>
-                <img src={Poleron222 } alt="" />
-                <h2>Poleron Gamer de Shrek</h2>
-                <p >39.990</p>
-                <p>
-                 Poleron Gamer del famoso Shrek, waos. </p>
-                </article>
+    <Product
+        name="Poleron Gamer Nintendo 64 "
+        price={49990}
+        description="Poleron Gamer de la famosa consola Nintendo 64."
+        imageUrl={Poleron111 }
+    />
+    <Product
+        name="Poleron Gamer de Shrek"
+        price={39990}
+        description="Poleron Gamer del famoso Shrek, waos. "
+        imageUrl={Poleron222 }
+    />
+
+
+    
 
     <footer>
     <p>© 2025 Level-UP Gamer

@@ -2,6 +2,9 @@ import React from 'react'
 import '../styles/categorias.css'
 import {Link} from 'react-router-dom' 
 import Compu111 from '../images/compu111.jpg'
+import Product from '../components/Product'
+
+
 
 export default function computadora() {
   return (
@@ -32,21 +35,22 @@ export default function computadora() {
         </nav>
     </header>
 
-    <article>
-     <img src={Compu111} alt="" />   
-    <h2>Notebook Asus Rog Strix Scar 18 </h2>
-                <p>El 2025 Strix SCAR 18 ofrece la mejor experiencia de juego con Windows 11 Home, 
-                    con procesador Intel® Core™ de última generación 
-                    y GPU NVIDIA® GeForce RTX™ para portátiles de última generación con Advanced Optimus.
-                     Este excelente hardware se complementa con hasta 
-                     64 GB de RAM DDR5 a 5600 MHz y 2 TB de almacenamiento PCIe 4.0, 
-                     con ranuras de memoria actualizables a RAM DDR5 a 6400 MHz
-                      y ranuras SSD totalmente compatibles con PCIe Gen 5, 
-                      lo que garantiza que siempre tendrás ventaja sobre la competencia. </p>
-                <p >6.399.990</p>
+    <Product 
+        name="Notebook Asus Rog Strix Scar 18"
+        price={6399990}
+        description="El 2025 Strix SCAR 18 ofrece la mejor experiencia de juego con Windows 11 Home,
+        con procesador Intel® Core™ de última generación
+        y GPU NVIDIA® GeForce RTX™ para portátiles de última generación con Advanced Optimus.
+         Este excelente hardware se complementa con hasta
+         64 GB de RAM DDR5 a 5600 MHz y 2 TB de almacenamiento PCIe 4.0,
+          con ranuras de memoria actualizables a RAM DDR5 a 6400 MHz
+           y ranuras SSD totalmente compatibles con PCIe Gen 5,
+            lo que garantiza que siempre tendrás ventaja sobre la competencia."
+        imageUrl={Compu111}
 
+    />
 
-    </article>
+    
 
 
     <footer>

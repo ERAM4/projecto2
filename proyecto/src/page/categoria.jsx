@@ -51,41 +51,41 @@ export default function categoria() {
     <div className="contenedorCategoria">
 
     
-    <article>
+    <article >
         <img src={Accesorio1} alt="" />      
         <Link to="/accesorios" > <p>Accesorios</p>   </Link >
     </article>
-    <article>
+    <article >
         <img src={Computadora1} alt="" />   
         <Link to="/computadora"  > <p>Computadoras Gamer</p>   </Link >      
         
-    </article>
-    <article>
+    </article >
+    <article >
         <img src={Consolas11} alt="" />        
         <Link to="/consolas"  > <p>Consolas</p>   </Link >
     </article>
-    <article>
+    <article >
         <img src={Juegodemesa1} alt="" />  
         <Link to="/juegodemesa" > <p>Juegos De mesa</p>   </Link >      
         
     </article>
-    <article>
+    <article >
         <img src={Mousegamer1} alt="" />        
         <Link to="/mouse" > <p>Mouse Gamer</p>   </Link >
     </article>
-    <article>
+    <article >
         <img src={Mousepadgamer1} alt="" />        
         <Link to="/mousepad" > <p>Mouse Pad</p>   </Link >
     </article>
-    <article>
+    <article >
         <img src={Poleronesgamer} alt="" />        
         <Link to="/polerones" > <p>Polerones Gamers Personalizados</p>   </Link >
     </article>
-    <article>
+    <article >
         <img src={Polera1} alt="" />        
         <Link to="/poleras" > <p>Poleras Personalizadas</p>   </Link >
     </article>
-    <article>
+    <article >
         <img src={Silla1 } alt="" />        
         <Link to="/silla" > <p>Sillas</p>   </Link >
     </article>

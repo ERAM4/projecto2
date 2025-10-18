@@ -5,6 +5,7 @@ import Consola111 from '../images/consola111.jpg'
 import Consola222 from '../images/consola222.jpg'
 import Consola333 from '../images/consola333.jpg'
 
+import Product from '../components/Product'
 
 export default function consolas() {
   return (
@@ -35,37 +36,41 @@ export default function consolas() {
         </nav>
     </header>
 
-    <article>
-    <img src={Consola111 } alt="" />
-    <h2>PS4 Pro 2Tb 500 Million Limited Edition </h2>
-    <p >1.965.956</p>
-    <p>
-    La PS4 Pro 2TB 500 Million Limited Edition 
-    representa la cumbre de las consolas de juegos domésticas, 
-    diseñada no solo para jugar sino para sumergirte en un mundo de entretenimiento.
-     Con su diseño elegante de edición limitada, esta consola celebra 500 millones de unidades vendidas,
-      lo que la convierte en el sueño de cualquier coleccionista. </p>
-    </article>
-    <article>
-    <img src={Consola222 } alt="" />
-    <h2>Microsoft Xbox Series X 1TB Halo Infinite </h2>
-    <p >1.243.659</p>
-    <p>La Microsoft Xbox Series X 1TB Halo Infinite (color gris) 
-        es una edición limitada de la potente consola de nueva generación de Microsoft. 
-        Incluye un diseño exclusivo inspirado en Halo Infinite, un disco SSD ultrarrápido de 1 TB,
-         soporte para juegos en resolución 4K hasta 120 FPS y un control inalámbrico temático a juego.
-          Ideal para fanáticos de Halo y jugadores que buscan máximo rendimiento y estilo.</p>
-    </article>
-    <article>
-    <img src={Consola333 } alt="" />
-    <h2>Nintendo Switch 2 </h2>
-    <p >619.990</p>
-    <p>Prepárate para la evolución del gaming portátil con la nueva Nintendo Switch 2.
+    <Product
+        name="PS4 Pro 2Tb 500 Million Limited Edition"
+        price={1965956}
+        description="La PS4 Pro 2TB 500 Million Limited Edition 
+        representa la cumbre de las consolas de juegos domésticas, 
+        diseñada no solo para jugar sino para sumergirte en un mundo de entretenimiento.
+         Con su diseño elegante de edición limitada, esta consola celebra 500 millones de unidades vendidas,
+          lo que la convierte en el sueño de cualquier coleccionista. "
+        imageUrl={Consola111}
+    />
+
+    <Product
+        name="Microsoft Xbox Series X 1TB Halo Infinite"
+        price={1243659}
+        description="La Microsoft Xbox Series X 1TB Halo Infinite (color gris)
+            es una edición limitada de la potente consola de nueva generación de Microsoft. 
+            Incluye un diseño exclusivo inspirado en Halo Infinite, un disco SSD ultrarrápido de 1 TB,
+            soporte para juegos en resolución 4K hasta 120 FPS y un control inalámbrico temático a juego.
+            Ideal para fanáticos de Halo y jugadores que buscan máximo rendimiento y estilo."
+        imageUrl={Consola222}
+    
+    />
+    <Product
+        name="Nintendo Switch 2 "
+        price={619990}
+        description="Prepárate para la evolución del gaming portátil con la nueva Nintendo Switch 2.
          Diseñada para llevar tu experiencia de juego a un nivel completamente nuevo, 
          esta consola redefine la versatilidad y el rendimiento,
           permitiéndote disfrutar de tus juegos favoritos en cualquier lugar y en cualquier momento.
-           Sumérgete en mundos vibrantes con gráficos impresionantes y una fluidez sin precedentes.</p>
-    </article>
+           Sumérgete en mundos vibrantes con gráficos impresionantes y una fluidez sin precedentes."
+        imageUrl={Consola333}   
+
+    />
+    
+    
 
     <footer>
     <p>© 2025 Level-UP Gamer
