@@ -3,7 +3,10 @@ import '../styles/paginaInicio.css'
 import Noti1 from '../images/noti1.jpg'
 import Noti2 from '../images/noti2.jpg'
 import Noti3 from '../images/noti3.jpg'
+import Noti4 from '../images/noti4.jpg'
 import {Link} from 'react-router-dom'
+import Product from '../components/Product'
+import {ProductTrue} from '../components/ProductTrue'
 
 export default function paginaInicio() {
   return (
@@ -29,11 +32,27 @@ export default function paginaInicio() {
         <button className='btnLogin'>Login</button>
     </Link>
     <Link to = "/carrito">
-            <button className='btnCarrito'>carrito</button>
+            <button className='btnCarrito'>🛒</button>
         </Link>
 
         </nav>
     </header>
+    
+    <h1>Productos mas vendidos</h1>
+    <div className="contenedorCategoria">
+    {ProductTrue.map((product) => (
+        <Product
+            
+            name={product.name}
+            price={product.price}
+            description={product.description}
+            imageUrl={product.imageUrl}
+            rating={product.rating}
+            
+            />
+         ) )  }
+    </div>
+
     <article>
         <img src={Noti1} alt="" />
         <p>
@@ -66,6 +85,20 @@ export default function paginaInicio() {
             <a href="https://vandal.elespanol.com/noticia/1350775116/el-popular-factorio-se-expande-al-espacio-con-su-nuevo-dlc-que-ya-esta-disponible-en-steam/"
              >Factorio (2020) </a>
              es un exitoso juego de simulación y gestión en el que tenemos que construir y gestionan fábricas automatizadas en un planeta alienígena, acaba de lanzar hoy su primera expansión titulada Factorio: Space Age, que ya está a la venta en Steam.
+        </p>
+    </article>
+    <article>
+        <img src={Noti4} alt="" />
+        <p>
+            ¡Bienvenido/a a nuestra guía oficial de <a href="https://vandal.elespanol.com/guias/guia-hades-2-trucos-consejos-y-secretos">Hades 2!</a> La primera y 
+            esperada secuela de Supergiant Games ya está disponible tras haber terminado 
+            su acceso anticipado para los jugadores de PC y Nintendo Switch 1-2,
+             e incluye una fantástica aventura protagonizada por Melínoe en su misión 
+             por vengar a su familia y derrocar al Titán del Tiempo. ¿Quieres embarcarte por el Inframundo
+              (o la superficie) con buen pie? Entonces echa un vistazo a 
+              los contenidos que te hemos preparado en nuestra guía para descubrir 
+              todas las bendiciones de los dioses, cómo progresar y derrotar a los jefes finales,
+               obtener recuerdos, conseguir materiales y mejoras y... ¡mucho, mucho más!
         </p>
     </article>
     <article>

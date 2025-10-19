@@ -27,7 +27,7 @@ export default function mousepad() {
         <button className='btnCategoria'>Categorias</button>
     </Link>
     <Link to = "/carrito">
-        <button className='btnCarrito'>carrito</button>
+        <button className='btnCarrito'>🛒</button>
     </Link>
             
 
@@ -39,12 +39,17 @@ export default function mousepad() {
         price={100000}
         description="Mouse pad de uno de los mas conocidos en la industria de las peliculas. "
         imageUrl={Mousepad111 }
+        rating={7 }
+        distribuidor="Nicolas Cage Productions"
+
     />
     <Product
         name="Mouse Pad WHAT IS LOVE? "
         price={349990}
         description="What is love? Oh, baby, don't hurt me Don't hurt me no more Oh, baby, don't hurt me Don't hurt me no more "
         imageUrl={Mousepad222 }
+        rating={9 }
+        distribuidor="Haddaway Inc"
     />
 
 

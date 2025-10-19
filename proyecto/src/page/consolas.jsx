@@ -29,7 +29,7 @@ export default function consolas() {
         <button className='btnCategoria'>Categorias</button>
     </Link>
     <Link to = "/carrito">
-        <button className='btnCarrito'>carrito</button>
+        <button className='btnCarrito'>🛒</button>
     </Link>
             
 
@@ -45,6 +45,8 @@ export default function consolas() {
          Con su diseño elegante de edición limitada, esta consola celebra 500 millones de unidades vendidas,
           lo que la convierte en el sueño de cualquier coleccionista. "
         imageUrl={Consola111}
+        rating={7}
+        distribuidor="Sony Interactive Entertainment"
     />
 
     <Product
@@ -56,7 +58,8 @@ export default function consolas() {
             soporte para juegos en resolución 4K hasta 120 FPS y un control inalámbrico temático a juego.
             Ideal para fanáticos de Halo y jugadores que buscan máximo rendimiento y estilo."
         imageUrl={Consola222}
-    
+        rating={8}
+        distribuidor="Microsoft"
     />
     <Product
         name="Nintendo Switch 2 "
@@ -67,7 +70,8 @@ export default function consolas() {
           permitiéndote disfrutar de tus juegos favoritos en cualquier lugar y en cualquier momento.
            Sumérgete en mundos vibrantes con gráficos impresionantes y una fluidez sin precedentes."
         imageUrl={Consola333}   
-
+        rating={9 }
+        distribuidor="Nintendo Co., Ltd"
     />
     
     

@@ -3,6 +3,7 @@ import {Link} from 'react-router-dom'
 import Ayuda1 from '../images/ayuda1.jpg'
 import Ayuda2 from '../images/ayuda2.jpg'
 import Ayuda3 from '../images/ayuda3.jpg'
+import Ayuda4 from '../images/ayuda4.jpg'
 import  '../styles/paginaInicio.css'
 export default function ayuda() {
   return (
@@ -25,7 +26,7 @@ export default function ayuda() {
         <button className='btnLogin'>Login</button>
     </Link>
     <Link to = "/carrito">
-            <button className='btnCarrito'>carrito</button>
+            <button className='btnCarrito'>🛒</button>
         </Link>
         </nav>
     </header>    
@@ -52,6 +53,15 @@ r           ealiza despachos a todo el país.</p>
             al cliente excepcional, y un programa de fidelización basado en gamificación que recompense a
             nuestros clientes más fieles.</p>
         <img src={Ayuda3} alt="" />
+    </article>
+    <article>
+        <h1>🤔 Cual es nuestro impacto Comunitario?</h1>
+            <p>La forma en la que impactamos a la comunidad Gamer y Geek, 
+                es promocionando y motivando a las personas a sumarse a esta cultura 
+                la cual tambien promuebe el compañerismo y ayuda a la comunidad Gamer y Geek, teniendo nuevos precios, 
+                productos para todas las personas y guías y blogs para las personas
+                 interesadas en iniciar en este mundo.</p>
+        <img src={Ayuda4} alt="" />
     </article>
         
     <footer>

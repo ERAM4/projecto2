@@ -28,7 +28,7 @@ export default function accesorios() {
         <button className='btnCategoria'>Categorias</button>
     </Link>
     <Link to = "/carrito">
-        <button className='btnCarrito'>carrito</button>
+        <button className='btnCarrito'>🛒</button>
     </Link>
             
 
@@ -46,6 +46,8 @@ export default function accesorios() {
           un dial multifunción Razer Command Dial para control avanzado, iluminación RGB Chroma,
            y es compatible con switches de 3 o 5 pines. "
         imageUrl={Acs1 }
+        rating={7}
+        distribuidor="Razer"
     
     />
     <Product
@@ -56,6 +58,9 @@ export default function accesorios() {
           un cómodo tejido de rejilla de microfibra con 
           almohadillas de espuma con memoria y una conexión inalámbrica de 2,4 GHz."
         imageUrl={Acs2 }
+        rating={4}
+        distribuidor="Corsair"
+
         />
 
     <Product
@@ -70,6 +75,9 @@ export default function accesorios() {
      y una estructura de aluminio con accesorios
         como filtro de espuma y trípode. "
         imageUrl={Acs3 }
+        rating={5}
+
+        distribuidor="Primus"
     />
 
     <footer>

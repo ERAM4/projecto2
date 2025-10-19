@@ -29,7 +29,7 @@ export default function poleras() {
         <button className='btnCategoria'>Categorias</button>
     </Link>
     <Link to = "/carrito">
-        <button className='btnCarrito'>carrito</button>
+        <button className='btnCarrito'>🛒</button>
     </Link>
             
 
@@ -41,18 +41,24 @@ export default function poleras() {
         price={13000}
         description="Polera para denunciar a un delincuente por estafa, fraude al fisco, homicidio de 3°, robo a mano armada, canibalismo, delitos contra la propiedad y traición a la patria. "
         imageUrl={Polera111 }
+        rating={5}
+        distribuidor= "Ministerio del Interior"
     />
     <Product
         name="Polera ultra seria "
         price={1000000}
         description="Un verdadero hombre no paga el cae 🙏. "
         imageUrl={Polera222 }
+        rating={10}
+        distribuidor= "Asociacion de hombres ultra serios"
     />
     <Product
         name="Polera BABY DON´T HURT ME,DON´T HURT ME, NO MORE "
         price={24990}
         description="Polera del BABY DON´T HURT ME, DON´T HURT ME, NO MORE. "
         imageUrl={Polera333 }
+        rating={8 }
+        distribuidor= "Haddaway Inc"
     />
 
     

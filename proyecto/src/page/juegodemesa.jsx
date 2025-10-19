@@ -31,7 +31,7 @@ export default function juegodemesa() {
         <button className='btnCategoria'>Categorias</button>
     </Link>
     <Link to = "/carrito">
-        <button className='btnCarrito'>carrito</button>
+        <button className='btnCarrito'>🛒</button>
     </Link>
             
 
@@ -49,7 +49,8 @@ export default function juegodemesa() {
         reglas básicas y a veces herramientas de montaje y pintura,
          todo lo necesario para comenzar a jugar."
         imageUrl={Juegomesa111} 
-    
+        rating={10}
+        distribuidor="Games Workshop"
     />
 
     <Product
@@ -62,6 +63,8 @@ export default function juegodemesa() {
           ejércitos de Mordor y gana dinero cobrando alquileres
            y controlando el Anillo de Poder."
         imageUrl={Juegomesa222 }
+        rating={9}
+        distribuidor="Hasbro"
         />
 
     <Product
@@ -73,6 +76,8 @@ export default function juegodemesa() {
             incluyendo al astronauta, un robot descontrolado 
             y alienígenas de aspecto de lagarto."
         imageUrl={Juegomesa333 }
+        rating={8}
+        distribuidor="Distribuidora Zathura"
     />
 
 
@@ -85,6 +90,8 @@ export default function juegodemesa() {
          construyendo asentamientos,
          ciudades y carreteras para alcanzar los 10 puntos de victoria. "
         imageUrl={Juegomesa444 }
+        rating={7}
+        distribuidor="Distribuidora Catan"
     />
     <Product
 
@@ -96,6 +103,8 @@ export default function juegodemesa() {
           ¡Ofrece diversión para toda la familia y te transporta
           a una emocionante aventura que nunca olvidarás! "
         imageUrl={Juegomesa555 }
+        rating={6}
+        distribuidor="TriStar Pictures"
     />
     
 

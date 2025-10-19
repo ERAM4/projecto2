@@ -29,7 +29,7 @@ export default function silla() {
         <button className='btnCategoria'>Categorias</button>
     </Link>
     <Link to = "/carrito">
-        <button className='btnCarrito'>carrito</button>
+        <button className='btnCarrito'>🛒</button>
     </Link>
             
 
@@ -43,12 +43,16 @@ export default function silla() {
         jugadores profesionales y trabajadores de oficina, que puede colgar hasta 3 pantallas 
         y tiene una tira de luz RGB ajustable de 16 colores incorporada en la cabina. "
         imageUrl={Silla111 }
+        rating={9}
+        distribuidor="SpaceX Incorporated"
         />
     <Product
         name="Silla Gamer Premium "
         price={100000}
         description="Una silla gaming Premium de un plastico resistente y de la mas alta calidad, perfecta para jugar y descansar, la silla perfecta para todo. "
         imageUrl={Silla222 }
+        rating={8}
+        distribuidor="Level-UP Gamer Co."
         />
 
 

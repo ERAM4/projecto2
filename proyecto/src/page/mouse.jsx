@@ -27,7 +27,7 @@ export default function mouse() {
         <button className='btnCategoria'>Categorias</button>
     </Link>
     <Link to = "/carrito">
-        <button className='btnCarrito'>carrito</button>
+        <button className='btnCarrito'>🛒</button>
     </Link>
             
 
@@ -43,7 +43,8 @@ export default function mouse() {
      y control en cada movimiento. Su diseño ligero de 77 gramos y las 11 zonas de iluminación
       Chroma RGB con iluminación inferior completa añaden una experiencia visual envolvente. "
     imageUrl={Mouse111 }
-    
+    rating={5}
+    distribuidor="Razer"
     />
     <Product
     name="Logitech G502 X Plus - Black (910-006161)"
@@ -52,6 +53,9 @@ export default function mouse() {
         cuenta con un sensor de juegos HERO 25K con seguimiento de precisión submicrométrica,
         LIGHTSYNC RGB personalizable, perfiles integrados, pesos reposicionables y mucho más. "
     imageUrl={Mouse222 }
+    rating={6  }
+    distribuidor="Logitech"
+
     />
      
 

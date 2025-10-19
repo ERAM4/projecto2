@@ -42,7 +42,7 @@ export default function categoria() {
         <button className='btnLogin'>Login</button>
     </Link>
     <Link to = "/carrito">
-        <button className='btnCarrito'>carrito</button>
+        <button className='btnCarrito'>🛒</button>
     </Link>
             
 

@@ -27,7 +27,7 @@ export default function polerones() {
         <button className='btnCategoria'>Categorias</button>
     </Link>
     <Link to = "/carrito">
-        <button className='btnCarrito'>carrito</button>
+        <button className='btnCarrito'>🛒</button>
     </Link>
             
 
@@ -39,12 +39,16 @@ export default function polerones() {
         price={49990}
         description="Poleron Gamer de la famosa consola Nintendo 64."
         imageUrl={Poleron111 }
+        rating={8 }
+        distribuidor= "Nintendo Co., Ltd."
     />
     <Product
         name="Poleron Gamer de Shrek"
         price={39990}
         description="Poleron Gamer del famoso Shrek, waos. "
         imageUrl={Poleron222 }
+        rating={10 }
+        distribuidor= "DreamWorks Animation"
     />
 
 

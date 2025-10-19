@@ -28,7 +28,7 @@ export default function computadora() {
         <button className='btnCategoria'>Categorias</button>
     </Link>
     <Link to = "/carrito">
-        <button className='btnCarrito'>carrito</button>
+        <button className='btnCarrito'>🛒</button>
     </Link>
             
 
@@ -47,7 +47,8 @@ export default function computadora() {
            y ranuras SSD totalmente compatibles con PCIe Gen 5,
             lo que garantiza que siempre tendrás ventaja sobre la competencia."
         imageUrl={Compu111}
-
+        rating={7}
+        distribuidor="Asus"
     />
 
     
