@@ -48,11 +48,17 @@ export default function paginaInicio() {
             description={product.description}
             imageUrl={product.imageUrl}
             rating={product.rating}
+            categoria={product.categoria}
+            distribuidor={product.distribuidor}
+            masVentas={product.masVentas}
             
             />
          ) )  }
     </div>
-
+        <h1> 😍Contenido Educativo y de Comunidad</h1>
+        <br />
+        <br />
+        <br />
     <article>
         <img src={Noti1} alt="" />
         <p>
@@ -90,7 +96,7 @@ export default function paginaInicio() {
     <article>
         <img src={Noti4} alt="" />
         <p>
-            ¡Bienvenido/a a nuestra guía oficial de <a href="https://vandal.elespanol.com/guias/guia-hades-2-trucos-consejos-y-secretos">Hades 2!</a> La primera y 
+            ¡Bienvenido/a , a nuestra guía oficial de <a href="https://vandal.elespanol.com/guias/guia-hades-2-trucos-consejos-y-secretos">Hades 2!</a> La primera y 
             esperada secuela de Supergiant Games ya está disponible tras haber terminado 
             su acceso anticipado para los jugadores de PC y Nintendo Switch 1-2,
              e incluye una fantástica aventura protagonizada por Melínoe en su misión 

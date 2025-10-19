@@ -48,7 +48,7 @@ export default function categoria() {
 
         </nav>
     </header>
-    <div className="contenedorCategoria">
+    <div className="Categorias123">
 
     
     <article >

@@ -46,7 +46,7 @@ export default function carrito() {
 
     }}>Vacias Carrito</button>
 
-    <div>
+    <div clasName="contenido">
 
 
 
