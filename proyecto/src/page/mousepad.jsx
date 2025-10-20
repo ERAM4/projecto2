@@ -1,5 +1,5 @@
 import React from 'react'
-import '../styles/categorias.css'
+
 import {Link} from 'react-router-dom' 
 import Mousepad111 from '../images/mousepad111.jpg'
 import Mousepad222 from '../images/mousepad222.jpg'

@@ -1,5 +1,5 @@
 import React from 'react'
-import '../styles/categorias.css'
+
 import {Link} from 'react-router-dom' 
 import Juegomesa111 from '../images/juegomesa111.jpg';
 import Juegomesa222 from '../images/juegomesa222.jpg';

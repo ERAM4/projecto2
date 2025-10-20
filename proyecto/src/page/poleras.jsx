@@ -1,5 +1,5 @@
 import React from 'react'
-import '../styles/categorias.css'
+
 import {Link} from 'react-router-dom' 
 import Polera111 from '../images/polera111.jpg'
 import Polera222 from '../images/polera222.jpg'

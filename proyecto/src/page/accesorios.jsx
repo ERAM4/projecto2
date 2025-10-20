@@ -1,10 +1,12 @@
 import React from 'react'
-import '../styles/categorias.css'
+
 import {Link} from 'react-router-dom' 
 import Acs1 from '../images/acesorios111.jpg'
 import Acs2 from '../images/acesorios222.jpg'
 import Acs3 from '../images/acesorios333.jpg'
 import Product from '../components/Product'
+
+
 
 export default function accesorios() {
   return (
