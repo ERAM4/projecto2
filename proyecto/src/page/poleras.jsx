@@ -3,7 +3,7 @@ import React from 'react'
 import {Link} from 'react-router-dom' 
 import Polera111 from '../images/polera111.jpg'
 import Polera222 from '../images/polera222.jpg'
-import Polera333 from '../images/polera333.jpg'
+import Polera444 from '../images/polera444.jpg'
 
 import Product from '../components/Product'
 
@@ -56,7 +56,7 @@ export default function poleras() {
         name="Polera BABY DON´T HURT ME,DON´T HURT ME, NO MORE "
         price={24990}
         description="Polera del BABY DON´T HURT ME, DON´T HURT ME, NO MORE. "
-        imageUrl={Polera333 }
+        imageUrl={Polera444 }
         rating={8 }
         distribuidor= "Haddaway Inc"
     />

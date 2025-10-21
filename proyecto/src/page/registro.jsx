@@ -1,6 +1,6 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
-
+import Formulario from '../page/formulario';
 
 export default function registro() {
   return (
@@ -25,6 +25,9 @@ export default function registro() {
 
         </nav>
     </header>
+
+    <Formulario/>
+
     <footer>
     <p>© 2025 Level-UP Gamer
     <br />
