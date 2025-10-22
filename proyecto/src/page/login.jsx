@@ -1,5 +1,6 @@
 import React from 'react'
 import {Link} from 'react-router-dom'
+import FormularioInicio from '../page/formularioParaInicio';
 
 export default function login() {
   return (
@@ -24,6 +25,10 @@ export default function login() {
 
         </nav>
     </header>
+  
+<FormularioInicio/>
+    <Link></Link>
+
     <footer>
     <p>© 2025 Level-UP Gamer
     <br />
