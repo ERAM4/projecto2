@@ -1,6 +1,8 @@
 import React, { useState } from "react";
+import { useNavigate } from 'react-router-dom';
 
-export default function FormularioLogin() {
+
+export default function FormularioLogin({verificarLogin}) {
   const [email, setEmail] = useState("");
   const [clave, setClave] = useState("");
   const [errores, setErrores] = useState("");
@@ -20,7 +22,8 @@ export default function FormularioLogin() {
 
     setErrores("");
     alert("Inicio de sesión exitoso");
-    
+    verificarLogin();
+  
   };
 
   const handleReset = () => {

@@ -1,8 +1,15 @@
 import React from 'react'
 import {Link} from 'react-router-dom'
 import FormularioInicio from '../page/formularioParaInicio';
+import { useNavigate } from 'react-router-dom';
 
-export default function login() {
+export default function login()
+ {
+        const navigate = useNavigate();
+        const handleLogin = () => {
+          navigate('/');
+        }
+
   return (
     <>
     <header>
@@ -28,7 +35,10 @@ export default function login() {
   <br />
   <br />
   <br />
-<FormularioInicio/>
+  
+<FormularioInicio verificarLogin={handleLogin}/>
+
+
 <br />
 <br />
 <br />
