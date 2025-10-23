@@ -15,6 +15,9 @@ export default function paginaInicio() {
        
         <nav>
             
+    <Link to = "/">
+        <button className='btnInicio'>Inicio</button>
+    </Link>
     <Link to = "/ayuda">
         <button className='btnAyuda'>Ayuda</button>
     </Link>
@@ -40,7 +43,7 @@ export default function paginaInicio() {
         <div><span className="label">Nombre Completo :</span> Henry Cavil</div>
         <div><span className="label">Teléfono :</span> +56 9 1234 5678</div>
         <div><span className="label">Correo Electrónico :</span> henry.warhammer4k@duocuc.cl</div>
-        <div><span className="label">Direccion :</span>Av. Siemore viva</div>
+        <div><span className="label">Direccion :</span>Av. Siempre viva</div>
       </div>
     </div>
     <div className="changeInfo">
