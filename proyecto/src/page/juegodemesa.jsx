@@ -40,7 +40,7 @@ export default function juegodemesa() {
 
         </nav>
     </header>
-
+    <div className="productosEnCategoria">
     <Product
         name="Warhammer 40K: Set introductorio"
         price={64990}
@@ -110,7 +110,7 @@ export default function juegodemesa() {
         distribuidor="TriStar Pictures"
     />
     
-
+</div >
 
     <footer>
     <p>© 2025 Level-UP Gamer

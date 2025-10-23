@@ -38,7 +38,7 @@ export default function consolas() {
 
         </nav>
     </header>
-
+        <div className="productosEnCategoria">
     <Product
         name="PS4 Pro 2Tb 500 Million Limited Edition"
         price={1965956}
@@ -77,7 +77,7 @@ export default function consolas() {
         distribuidor="Nintendo Co., Ltd"
     />
     
-    
+    </div>
 
     <footer>
     <p>© 2025 Level-UP Gamer

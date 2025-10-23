@@ -36,7 +36,7 @@ export default function mousepad() {
 
         </nav>
     </header>
-
+    <div className="productosEnCategoria">
     <Product
         name="Mouse Pad Nicolas Cage "
         price={100000}
@@ -56,7 +56,7 @@ export default function mousepad() {
     />
 
 
-    
+    </div>
 
     <footer>
     <p>© 2025 Level-UP Gamer

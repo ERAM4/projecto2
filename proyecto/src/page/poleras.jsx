@@ -37,7 +37,7 @@ export default function poleras() {
 
         </nav>
     </header>
-
+    <div className="productosEnCategoria">
     <Product
         name="Polera SI LO VE ¡DENUNCIELO! "
         price={13000}
@@ -63,7 +63,7 @@ export default function poleras() {
         distribuidor= "Haddaway Inc"
     />
 
-    
+    </div>
     <footer>
     <p>© 2025 Level-UP Gamer
     <br />

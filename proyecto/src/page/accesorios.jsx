@@ -41,7 +41,7 @@ export default function accesorios() {
     </header>
 
     
-    
+    <div className="productosEnCategoria">
     <Product
         name="Razer Blackwidow V4 Pro "
         price={449990}
@@ -75,7 +75,7 @@ export default function accesorios() {
     Ethos100T USB (PMI-101)
     es un micrófono de condensador con patrón polar cardioide,
      diseñado para videojuegos, transmisiones en vivo y creación de contenido,
-    que ofrece conexión USB-C, control de ganancia y mute,
+    que ofrece conexión USB-C, 
     una resolución de 16 bits/48KHz
      y una estructura de aluminio con accesorios
         como filtro de espuma y trípode. "
@@ -84,7 +84,7 @@ export default function accesorios() {
 
         distribuidor="Primus"
     />
-
+    </div>
     <footer>
     <p>© 2025 Level-UP Gamer
     <br />

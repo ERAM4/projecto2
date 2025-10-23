@@ -35,7 +35,7 @@ export default function polerones() {
 
         </nav>
     </header>
-
+    <div className="productosEnCategoria">
     <Product
         name="Poleron Gamer Nintendo 64 "
         price={49990}
@@ -53,7 +53,7 @@ export default function polerones() {
         distribuidor= "DreamWorks Animation"
     />
 
-
+    </div>
     
 
     <footer>

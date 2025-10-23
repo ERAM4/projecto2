@@ -37,7 +37,7 @@ export default function silla() {
 
         </nav>
     </header>
-
+    <div className="productosEnCategoria">
     <Product
         name="Silla Game Cockpit de Oficina y Juego, Ergonómica, Diseño Scorpion de Cápsula Espacial, para Computadora y Ver Video "
         price={9931641}
@@ -57,7 +57,7 @@ export default function silla() {
         distribuidor="Level-UP Gamer Co."
         />
 
-
+    </div>
     <footer>
     <p>© 2025 Level-UP Gamer
     <br />

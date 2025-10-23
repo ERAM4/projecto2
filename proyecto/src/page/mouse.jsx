@@ -36,7 +36,7 @@ export default function mouse() {
 
         </nav>
     </header>
-
+<div className="productosEnCategoria">
     <Product 
     name="Razer Cobra Pro "
     price={152990}
@@ -60,7 +60,7 @@ export default function mouse() {
     distribuidor="Logitech"
 
     />
-     
+     </div>
 
     <footer>
     <p>© 2025 Level-UP Gamer

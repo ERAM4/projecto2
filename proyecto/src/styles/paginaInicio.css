@@ -180,6 +180,15 @@ article a:hover {
 
 }
 
+.productosEnCategoria{
+  width: 95%;
+ height: 95%;
+  flex-direction: row;
+  display: flex;
+  justify-content: space-around;
+  padding: 1.5rem;
+
+}
 
 /* --- MAPA --- */
 iframe {

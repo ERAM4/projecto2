@@ -37,7 +37,7 @@ export default function computadora() {
 
         </nav>
     </header>
-
+    <div className="productosEnCategoria">
     <Product 
         name="Notebook Asus Rog Strix Scar 18"
         price={6399990}
@@ -54,7 +54,7 @@ export default function computadora() {
         distribuidor="Asus"
     />
 
-    
+</div>
 
 
     <footer>
