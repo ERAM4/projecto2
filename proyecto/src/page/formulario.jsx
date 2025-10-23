@@ -6,6 +6,7 @@ export default function Formulario() {
   const [email, setEmail] = useState("");
   const [clave1, setClave1] = useState("");
   const [clave2, setClave2] = useState("");
+  const [edad, setEdad] = useState("");
   const [errores, setErrores] = useState("");
 
   const handleSubmit = (e) => {
@@ -25,8 +26,16 @@ export default function Formulario() {
       setErrores("Las claves no coinciden.");
       return;
     }
+    if (edad === "" || isNaN(edad)) {
+      setErrores("Ingrese una edad válida.");
+      return;
+    }
 
-    // Si todo está correcto
+    if (parseInt(edad) < 18) {
+      setErrores("Debe ser mayor de 18 años para continuar.");
+      return;
+    }
+    
     setErrores("");
     alert("Formulario enviado correctamente ✅");
   };
@@ -91,7 +100,21 @@ export default function Formulario() {
           placeholder="Clave1234"
         />
       </div>
-
+      <div className="row">
+        <label htmlFor="edad">Edad</label>
+        <input
+          type="number"
+          id="edad"
+          value={edad}
+          onChange={(e) => setEdad(e.target.value)}
+          className={edad && edad < 18 ? "error" : ""}
+          placeholder="18"
+          min="0"
+        />
+        {edad && edad < 18 && (
+          <small style={{ color: "red" }}>Debe ser mayor de 18 años</small>
+        )}
+      </div>
       <button type="reset" className="btn reset" onClick={() => setErrores("")}>
         Limpiar
       </button>
@@ -103,3 +126,4 @@ export default function Formulario() {
     </form>
   );
 }
+
