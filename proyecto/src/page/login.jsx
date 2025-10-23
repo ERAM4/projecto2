@@ -25,9 +25,15 @@ export default function login() {
 
         </nav>
     </header>
-  
+  <br />
+  <br />
+  <br />
 <FormularioInicio/>
-    <Link></Link>
+<br />
+<br />
+<br />
+    <p>No tienes una cuenta? <a href="/registro">Registrate</a></p>
+    
 
     <footer>
     <p>© 2025 Level-UP Gamer

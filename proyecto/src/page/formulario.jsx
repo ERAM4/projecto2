@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 
+
 export default function Formulario() {
   const [nombre, setNombre] = useState("");
   const [email, setEmail] = useState("");
@@ -14,12 +15,12 @@ export default function Formulario() {
       setErrores("Ingrese mínimo 3 letras en el nombre.");
       return;
     }
-
+<br />
     if (!email.includes("@")) {
       setErrores("Añade un signo arroba (@) en el email.");
       return;
     }
-
+<br />
     if (clave1 !== clave2 || clave2 === "") {
       setErrores("Las claves no coinciden.");
       return;

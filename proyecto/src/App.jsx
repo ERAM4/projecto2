@@ -6,6 +6,7 @@ import Registro from './page/registro'
 import React from 'react'
 import Ayuda from './page/ayuda'
 
+import Perfil from './page/perfil'
 import Silla from './page/silla'
 import Poleras from './page/poleras'
 import Polerones from './page/polerones'
@@ -39,6 +40,7 @@ function App() {
         <Route path ="/polerones" element={<Polerones/>}/>
         <Route path ="/poleras" element={<Poleras/>}/>
         <Route path ="/silla" element={<Silla/>}/>
+        <Route path ="/perfil" element={<Perfil/>}/>
       
       </Routes>
     </BrowserRouter>

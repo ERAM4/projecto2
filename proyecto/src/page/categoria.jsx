@@ -44,6 +44,9 @@ export default function categoria() {
     <Link to = "/carrito">
         <button className='btnCarrito'>🛒</button>
     </Link>
+    <Link to = "/perfil">
+        <button className='btnPerfil'>Perfil</button>
+    </Link>
             
 
         </nav>

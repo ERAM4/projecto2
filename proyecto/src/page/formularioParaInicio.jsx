@@ -20,6 +20,7 @@ export default function FormularioLogin() {
 
     setErrores("");
     alert("Inicio de sesión exitoso");
+    
   };
 
   const handleReset = () => {

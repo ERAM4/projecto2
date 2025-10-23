@@ -30,6 +30,9 @@ export default function carrito() {
    <Link to = "/categoria">
            <button className='btnCategoria'>Categorias</button>
        </Link>
+       <Link to = "/perfil">
+        <button className='btnPerfil'>Perfil</button>
+    </Link>
             
 
         </nav>

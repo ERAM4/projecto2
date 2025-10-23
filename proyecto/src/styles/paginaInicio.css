@@ -170,6 +170,17 @@ article a:hover {
   text-decoration: underline;
 }
 
+.perfil{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.card1>img{
+  border-radius: 50%;
+
+}
+
+
 /* --- MAPA --- */
 iframe {
   display: block;
@@ -181,6 +192,7 @@ iframe {
   height: 25rem;
   border: none;
 }
+
 
 /* --- FOOTER --- */
 footer {
