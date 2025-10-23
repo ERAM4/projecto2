@@ -86,14 +86,14 @@ button{
 nav button {
   background: transparent;
   border: 2px solid cyan;
-  color: cyan;
+  color: rgb(45, 189, 45);
   font-family: 'Orbitron', sans-serif;
   font-size: 1rem;
   padding: 0.6rem 1.5rem;
   border-radius: 10px;
   cursor: pointer;
   transition: all 0.3s ease;
-  box-shadow: 0 0 10px rgba(0, 255, 255, 0.2);
+  box-shadow: 0 0 10px rgba(17, 197, 41, 0.952);
 }
 
 nav button:hover {
