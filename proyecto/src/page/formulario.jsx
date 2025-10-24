@@ -1,4 +1,5 @@
-import React, { useState } from "react";
+import React, { use, useState } from "react";
+import { useNavigate } from 'react-router-dom';
 
 
 export default function Formulario() {
@@ -8,6 +9,22 @@ export default function Formulario() {
   const [clave2, setClave2] = useState("");
   const [edad, setEdad] = useState("");
   const [errores, setErrores] = useState("");
+  const [emailDuoc, setEmailDuoc] = useState("");
+
+  const navigate = useNavigate();
+  const handleLogin = () => {
+    navigate('/login');
+  }
+
+  const verificarEmailDuoc = (email) => {
+    if (email.endsWith("@duocuc.cl")){
+      setEmailDuoc("Email institucional de Duoc UC encontrado.");
+      return;
+    }else{
+      setEmailDuoc("");
+      return;
+    }
+  };
 
   const handleSubmit = (e) => {
     e.preventDefault();
@@ -38,6 +55,7 @@ export default function Formulario() {
     
     setErrores("");
     alert("Formulario enviado correctamente ✅");
+    handleLogin();
   };
 
   return (
@@ -72,7 +90,7 @@ export default function Formulario() {
           type="text"
           id="email"
           value={email}
-          onChange={(e) => setEmail(e.target.value)}
+          onChange={(e) => {setEmail(e.target.value); verificarEmailDuoc(e.target.value); }}
           className={email.length > 0 && !email.includes("@") ? "error" : ""}
           placeholder="juanperez@gmail.com"
         />
@@ -123,6 +141,7 @@ export default function Formulario() {
       </button>
 
       {errores && <p id="errores" style={{ color: "red" }}>{errores}</p>}
+      {emailDuoc && <p id="emailDuoc" style={{ color: "green" }}>{emailDuoc}</p>}
     </form>
   );
 }

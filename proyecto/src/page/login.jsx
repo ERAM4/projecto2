@@ -18,34 +18,30 @@ export default function login()
 
     <Link to = "/">
         <button className='btnInicio'>Inicio</button>
-    </Link>        
+    </Link>
             <Link to = "/ayuda">
         <button className='btnAyuda'>Ayuda</button>
     </Link>
     <Link to = "/categoria">
         <button className='btnCategoria'>Categorias</button>
     </Link>
-    
+
     <Link to = "/registro">
         <button className='btnRegistro'>Registro</button>
     </Link>
 
         </nav>
     </header>
-  <br />
-  <br />
-  <br />
   
+
 <FormularioInicio verificarLogin={handleLogin}/>
 
 
-<br />
-<br />
-<br />
-    <p>No tienes una cuenta? <a href="/registro">Registrate</a></p>
-    
 
-    <footer>
+    <p>No tienes una cuenta? <a href="/registro">Registrate</a></p>
+
+
+    <footer style={{marginTop:'10rem'}}>
     <p>© 2025 Level-UP Gamer
     <br />
         Para Ayuda:</p>
@@ -53,7 +49,7 @@ export default function login()
     &nbsp;| &nbsp;
     <a href="https://www.instagram.com/henrycavill/" >Instagram</a> </p>
     <p>Contacto:<a href="https://wa.me/56912345678" >Whatsaap</a> </p>
-    
+
 
 
 
