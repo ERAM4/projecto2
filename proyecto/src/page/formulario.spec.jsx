@@ -1,6 +1,7 @@
 import { render, screen, fireEvent } from "@testing-library/react"
 import Formulario from "./formulario"
 import React from "react"
+import { MemoryRouter } from "react-router-dom"
 
 describe('Formulario Component', () => {
     const mockUser = {
@@ -11,7 +12,9 @@ describe('Formulario Component', () => {
     }
 
     it('renderiza correctamente los campos principales del formulario', () => {
-        render(<Formulario />)
+        render(<MemoryRouter>
+            <Formulario />
+          </MemoryRouter>)
 
         expect(screen.getByText("Crear una cuenta")).toBeInTheDocument()
         expect(screen.getByLabelText("Nombre")).toBeInTheDocument()

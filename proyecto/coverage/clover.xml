@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1761262777879" clover="3.2.0">
-  <project timestamp="1761262777880" name="All files">
-    <metrics statements="49" coveredstatements="23" conditionals="37" coveredconditionals="11" methods="20" coveredmethods="13" elements="106" coveredelements="47" complexity="0" loc="49" ncloc="49" packages="3" files="12" classes="12"/>
+<coverage generated="1761266719314" clover="3.2.0">
+  <project timestamp="1761266719315" name="All files">
+    <metrics statements="60" coveredstatements="27" conditionals="41" coveredconditionals="12" methods="22" coveredmethods="13" elements="123" coveredelements="52" complexity="0" loc="60" ncloc="60" packages="3" files="12" classes="12"/>
     <package name="mock">
       <metrics statements="0" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
       <file name="fileMock.js" path="C:\Users\ACER\Desktop\projecto2\proyecto\mock\fileMock.js">
@@ -21,7 +21,7 @@
       </file>
     </package>
     <package name="src.page">
-      <metrics statements="43" coveredstatements="17" conditionals="35" coveredconditionals="10" methods="17" coveredmethods="10"/>
+      <metrics statements="54" coveredstatements="21" conditionals="39" coveredconditionals="11" methods="19" coveredmethods="10"/>
       <file name="accesorios.jsx" path="C:\Users\ACER\Desktop\projecto2\proyecto\src\page\accesorios.jsx">
         <metrics statements="1" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
         <line num="12" count="1" type="stmt"/>
@@ -35,41 +35,52 @@
         <line num="11" count="1" type="stmt"/>
       </file>
       <file name="formulario.jsx" path="C:\Users\ACER\Desktop\projecto2\proyecto\src\page\formulario.jsx">
-        <metrics statements="34" coveredstatements="8" conditionals="35" coveredconditionals="10" methods="8" coveredmethods="1"/>
-        <line num="5" count="1" type="stmt"/>
+        <metrics statements="45" coveredstatements="12" conditionals="39" coveredconditionals="11" methods="10" coveredmethods="1"/>
         <line num="6" count="1" type="stmt"/>
         <line num="7" count="1" type="stmt"/>
         <line num="8" count="1" type="stmt"/>
         <line num="9" count="1" type="stmt"/>
         <line num="10" count="1" type="stmt"/>
+        <line num="11" count="1" type="stmt"/>
         <line num="12" count="1" type="stmt"/>
-        <line num="13" count="0" type="stmt"/>
-        <line num="15" count="0" type="cond" truecount="0" falsecount="2"/>
+        <line num="14" count="1" type="stmt"/>
+        <line num="15" count="1" type="stmt"/>
         <line num="16" count="0" type="stmt"/>
-        <line num="17" count="0" type="stmt"/>
-        <line num="19" count="0" type="stmt"/>
+        <line num="19" count="1" type="stmt"/>
         <line num="20" count="0" type="cond" truecount="0" falsecount="2"/>
         <line num="21" count="0" type="stmt"/>
         <line num="22" count="0" type="stmt"/>
         <line num="24" count="0" type="stmt"/>
-        <line num="25" count="0" type="cond" truecount="0" falsecount="4"/>
-        <line num="26" count="0" type="stmt"/>
-        <line num="27" count="0" type="stmt"/>
-        <line num="29" count="0" type="cond" truecount="0" falsecount="4"/>
+        <line num="25" count="0" type="stmt"/>
+        <line num="29" count="1" type="stmt"/>
         <line num="30" count="0" type="stmt"/>
-        <line num="31" count="0" type="stmt"/>
-        <line num="34" count="0" type="cond" truecount="0" falsecount="2"/>
-        <line num="35" count="0" type="stmt"/>
+        <line num="32" count="0" type="cond" truecount="0" falsecount="2"/>
+        <line num="33" count="0" type="stmt"/>
+        <line num="34" count="0" type="stmt"/>
         <line num="36" count="0" type="stmt"/>
+        <line num="37" count="0" type="cond" truecount="0" falsecount="2"/>
+        <line num="38" count="0" type="stmt"/>
         <line num="39" count="0" type="stmt"/>
-        <line num="40" count="0" type="stmt"/>
-        <line num="43" count="1" type="stmt"/>
+        <line num="41" count="0" type="stmt"/>
+        <line num="42" count="0" type="cond" truecount="0" falsecount="4"/>
+        <line num="43" count="0" type="stmt"/>
+        <line num="44" count="0" type="stmt"/>
+        <line num="46" count="0" type="cond" truecount="0" falsecount="4"/>
+        <line num="47" count="0" type="stmt"/>
+        <line num="48" count="0" type="stmt"/>
+        <line num="51" count="0" type="cond" truecount="0" falsecount="2"/>
+        <line num="52" count="0" type="stmt"/>
         <line num="53" count="0" type="stmt"/>
-        <line num="75" count="0" type="stmt"/>
-        <line num="87" count="0" type="stmt"/>
-        <line num="98" count="0" type="stmt"/>
-        <line num="109" count="0" type="stmt"/>
-        <line num="118" count="0" type="stmt"/>
+        <line num="56" count="0" type="stmt"/>
+        <line num="57" count="0" type="stmt"/>
+        <line num="58" count="0" type="stmt"/>
+        <line num="61" count="1" type="stmt"/>
+        <line num="71" count="0" type="stmt"/>
+        <line num="93" count="0" type="stmt"/>
+        <line num="105" count="0" type="stmt"/>
+        <line num="116" count="0" type="stmt"/>
+        <line num="127" count="0" type="stmt"/>
+        <line num="136" count="0" type="stmt"/>
       </file>
       <file name="juegodemesa.jsx" path="C:\Users\ACER\Desktop\projecto2\proyecto\src\page\juegodemesa.jsx">
         <metrics statements="1" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
