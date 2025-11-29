@@ -2,29 +2,37 @@ import axios from "axios";
 
 const API_BASE_URL = "http://localhost:9090/api/usuarios";
 
-
 class UserService {
+  
+  // ✔ Obtener todos los usuarios
   findAllUsuarios() {
     return axios.get(API_BASE_URL);
   }
 
-getUsuarioById(id) {
+  // ✔ Obtener usuario por id
+  getUsuarioById(id) {
     return axios.get(`${API_BASE_URL}/${id}`);
   }
 
-saveUsuario(usuario) {
+  // ✔ Crear usuario
+  saveUsuario(usuario) {
     return axios.post(API_BASE_URL, usuario);
-    }
-updateUsuario(id, usuario) {
+  }
+
+  // ✔ Actualizar usuario
+  updateUsuario(id, usuario) {
     return axios.put(`${API_BASE_URL}/${id}`, usuario);
   }
 
-deleteUsuario(id) {
+  // ✔ Eliminar usuario
+  deleteUsuario(id) {
     return axios.delete(`${API_BASE_URL}/${id}`);
   }
 
-
+  // ✔ LOGIN (solo uno, el correcto)
+  loginUsuario(credenciales) {
+    return axios.post(`${API_BASE_URL}/login`, credenciales);
+  }
 }
-
 
 export default new UserService();
