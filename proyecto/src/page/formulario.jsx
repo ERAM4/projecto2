@@ -1,61 +1,66 @@
-import React, { use, useState } from "react";
-import { useNavigate } from 'react-router-dom';
-
+import React, { useState } from "react";
+import { useNavigate } from "react-router-dom";
+import UserService from "../services/userServices";
 
 export default function Formulario() {
-  const [nombre, setNombre] = useState("");
-  const [email, setEmail] = useState("");
-  const [clave1, setClave1] = useState("");
-  const [clave2, setClave2] = useState("");
-  const [edad, setEdad] = useState("");
+  const [username, setUsername] = useState("");
+  const [correo, setCorreo] = useState("");
+  const [password1, setPassword1] = useState("");
+  const [password2, setPassword2] = useState("");
   const [errores, setErrores] = useState("");
   const [emailDuoc, setEmailDuoc] = useState("");
 
   const navigate = useNavigate();
-  const handleLogin = () => {
-    navigate('/login');
-  }
 
-  const verificarEmailDuoc = (email) => {
-    if (email.endsWith("@duocuc.cl")){
+  const handleLogin = () => {
+    navigate("/login");
+  };
+
+  const verificarEmailDuoc = (correo) => {
+    if (correo.endsWith("@duocuc.cl")) {
       setEmailDuoc("Email institucional de Duoc UC encontrado.");
-      return;
-    }else{
+    } else {
       setEmailDuoc("");
-      return;
     }
   };
 
   const handleSubmit = (e) => {
     e.preventDefault();
 
-    if (nombre.length < 3) {
+    // VALIDACIONES
+    if (username.length < 3) {
       setErrores("Ingrese mínimo 3 letras en el nombre.");
       return;
     }
-<br />
-    if (!email.includes("@")) {
-      setErrores("Añade un signo arroba (@) en el email.");
+    if (!correo.includes("@")) {
+      setErrores("El correo debe contener @");
       return;
     }
-<br />
-    if (clave1 !== clave2 || clave2 === "") {
-      setErrores("Las claves no coinciden.");
-      return;
-    }
-    if (edad === "" || isNaN(edad)) {
-      setErrores("Ingrese una edad válida.");
+    if (password1 !== password2) {
+      setErrores("Las contraseñas no coinciden.");
       return;
     }
 
-    if (parseInt(edad) < 18) {
-      setErrores("Debe ser mayor de 18 años para continuar.");
-      return;
-    }
-    
     setErrores("");
-    alert("Formulario enviado correctamente ✅");
-    handleLogin();
+
+    // OBJETO EXACTO DEL MODELO
+    const nuevoUsuario = {
+      username: username,
+      correo: correo,
+      password: password1,
+      rol: "USER" // puedes cambiarlo si quieres
+    };
+
+    // ENVIAR AL BACKEND
+    UserService.saveUsuario(nuevoUsuario)
+      .then((response) => {
+        alert("Usuario registrado correctamente");
+        handleLogin();
+      })
+      .catch((error) => {
+        console.error("Error al registrar usuario:", error);
+        setErrores("Hubo un error al registrar el usuario.");
+      });
   };
 
   return (
@@ -63,86 +68,66 @@ export default function Formulario() {
       <h1>Crear una cuenta</h1>
 
       <div className="row">
-        <label htmlFor="nombres">Nombre</label>
+        <label htmlFor="username">Nombre de usuario</label>
         <input
           type="text"
-          id="nombres"
-          value={nombre}
-          onChange={(e) => setNombre(e.target.value)}
-          className={nombre.length > 0 && nombre.length < 3 ? "error" : ""}
-          placeholder="Juan Andres"
+          id="username"
+          value={username}
+          onChange={(e) => setUsername(e.target.value)}
+          placeholder="JuanPerez"
+          className={username.length > 0 && username.length < 3 ? "error" : ""}
         />
       </div>
 
       <div className="row">
-        <label htmlFor="apellidos">Apellidos</label>
-        <input type="text" id="apellidos" placeholder="Perez Muñoz" />
-      </div>
-
-      <div className="row">
-        <label htmlFor="direccion">Dirección</label>
-        <input type="text" id="direccion" placeholder="Los molles #25" />
-      </div>
-
-      <div className="row">
-        <label htmlFor="email">E-mail</label>
+        <label htmlFor="correo">Correo</label>
         <input
           type="text"
-          id="email"
-          value={email}
-          onChange={(e) => {setEmail(e.target.value); verificarEmailDuoc(e.target.value); }}
-          className={email.length > 0 && !email.includes("@") ? "error" : ""}
-          placeholder="juanperez@gmail.com"
+          id="correo"
+          value={correo}
+          onChange={(e) => {
+            setCorreo(e.target.value);
+            verificarEmailDuoc(e.target.value);
+          }}
+          placeholder="usuario@duocuc.cl"
+          className={correo.length > 0 && !correo.includes("@") ? "error" : ""}
         />
       </div>
 
       <div className="row">
-        <label htmlFor="clave1">Contraseña</label>
+        <label htmlFor="password1">Contraseña</label>
         <input
           type="password"
-          id="clave1"
-          value={clave1}
-          onChange={(e) => setClave1(e.target.value)}
+          id="password1"
+          value={password1}
+          onChange={(e) => setPassword1(e.target.value)}
           placeholder="Clave1234"
         />
       </div>
 
       <div className="row">
-        <label htmlFor="clave2">Repetir contraseña</label>
+        <label htmlFor="password2">Repetir contraseña</label>
         <input
           type="password"
-          id="clave2"
-          value={clave2}
-          onChange={(e) => setClave2(e.target.value)}
-          className={clave2.length > 0 && clave1 !== clave2 ? "error" : ""}
+          id="password2"
+          value={password2}
+          onChange={(e) => setPassword2(e.target.value)}
+          className={password2.length > 0 && password1 !== password2 ? "error" : ""}
           placeholder="Clave1234"
         />
       </div>
-      <div className="row">
-        <label htmlFor="edad">Edad</label>
-        <input
-          type="number"
-          id="edad"
-          value={edad}
-          onChange={(e) => setEdad(e.target.value)}
-          className={edad && edad < 18 ? "error" : ""}
-          placeholder="18"
-          min="0"
-        />
-        {edad && edad < 18 && (
-          <small style={{ color: "red" }}>Debe ser mayor de 18 años</small>
-        )}
-      </div>
-      <button type="reset" className="btn reset" onClick={() => setErrores("")}>
-        Limpiar
-      </button>
+
+      {emailDuoc && (
+        <p style={{ color: "green" }}>{emailDuoc}</p>
+      )}
+
+      {errores && (
+        <p style={{ color: "red" }}>{errores}</p>
+      )}
+
       <button type="submit" className="btn submit">
-        Enviar
+        Registrar
       </button>
-
-      {errores && <p id="errores" style={{ color: "red" }}>{errores}</p>}
-      {emailDuoc && <p id="emailDuoc" style={{ color: "green" }}>{emailDuoc}</p>}
     </form>
   );
 }
-

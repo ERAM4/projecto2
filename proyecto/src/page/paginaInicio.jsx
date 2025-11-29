@@ -43,20 +43,21 @@ export default function paginaInicio() {
     
     <h1>Productos mas vendidos</h1>
     <div className="contenedorCategoria">
-    {ProductTrue.map((product) => (
-        <Product
-            
-            name={product.name}
-            price={product.price}
-            description={product.description}
-            imageUrl={product.imageUrl}
-            rating={product.rating}
-            categoria={product.categoria}
-            distribuidor={product.distribuidor}
-            masVentas={product.masVentas}
-            
-            />
-         ) )  }
+    {ProductTrue.map((product, index) => (
+    <Product
+        key={product.id || index}
+        name={product.name}
+        price={product.price}
+        description={product.description}
+        imageUrl={product.imageUrl}
+        rating={product.rating}
+        categoria={product.categoria}
+        distribuidor={product.distribuidor}
+        masVentas={product.masVentas}
+    />
+))}
+
+
     </div>
         <h1> 😍Contenido Educativo y de Comunidad</h1>
         <br />
