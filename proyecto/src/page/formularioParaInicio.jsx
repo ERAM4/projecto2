@@ -27,13 +27,14 @@ export default function FormularioLogin({ verificarLogin }) {
     setErrores("");
 
     // 🔥 AQUÍ SE HACE EL LOGIN REAL
+
     UserService.loginUsuario({
       correo: email,
       password: clave
     })
       .then((response) => {
         console.log("LOGIN OK:", response.data);
-
+        localStorage.setItem("usuario", JSON.stringify(response.data));
         verificarLogin();  // si quieres marcar autenticado en tu app
         navigate("/"); // redirige donde tú quieras
       })
@@ -41,6 +42,8 @@ export default function FormularioLogin({ verificarLogin }) {
         console.error("LOGIN ERROR:", error);
         setErrores(error.response?.data || "Error al iniciar sesión");
       });
+
+
   };
 
   const handleReset = () => {

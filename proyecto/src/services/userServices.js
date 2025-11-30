@@ -1,9 +1,10 @@
 import axios from "axios";
 
 const API_BASE_URL = "http://localhost:9090/api/usuarios";
+const API_AUTH_URL = "http://localhost:9090/auth";
 
 class UserService {
-  
+
   // ✔ Obtener todos los usuarios
   findAllUsuarios() {
     return axios.get(API_BASE_URL);
@@ -29,9 +30,9 @@ class UserService {
     return axios.delete(`${API_BASE_URL}/${id}`);
   }
 
-  // ✔ LOGIN (solo uno, el correcto)
+  // ✔ LOGIN con Spring Security
   loginUsuario(credenciales) {
-    return axios.post(`${API_BASE_URL}/login`, credenciales);
+    return axios.post(`${API_AUTH_URL}/login`, credenciales);
   }
 }
 
