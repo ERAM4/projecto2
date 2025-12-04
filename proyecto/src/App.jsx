@@ -19,18 +19,21 @@ import Accesorios from './page/accesorios'
 import Carrito from './page/carrito'
 import './App.css'
 
+
+import ProtectedRoute from './components/ProtectedRoute'; 
+
 function App() {
   
-
   return (
     <BrowserRouter>
       <Routes>
+        {/* Rutas Públicas (Cualquiera puede entrar) */}
         <Route path="/" element={<PaginaInicio />} />
         <Route path="/login" element={<Login/>} />
         <Route path="/registro" element={<Registro/>} />
         <Route path="/categoria" element={<Categoria/>} />
         <Route path="/ayuda" element={<Ayuda/>} />
-        <Route path ="/carrito" element={<Carrito/>}/>
+        
         <Route path ="/accesorios" element={<Accesorios/>}/>
         <Route path ="/juegodemesa" element={<Juegodemesa/>}/>
         <Route path ="/computadora" element={<Computadora/>}/>
@@ -40,7 +43,21 @@ function App() {
         <Route path ="/polerones" element={<Polerones/>}/>
         <Route path ="/poleras" element={<Poleras/>}/>
         <Route path ="/silla" element={<Silla/>}/>
-        <Route path ="/perfil" element={<Perfil/>}/>
+
+        {/* 2. RUTAS PROTEGIDAS (Solo usuarios logueados) */}
+        {/* Envolvemos el Carrito y el Perfil con ProtectedRoute */}
+        
+        <Route path ="/carrito" element={
+            <ProtectedRoute>
+              <Carrito/>
+            </ProtectedRoute>
+        }/>
+
+        <Route path ="/perfil" element={
+            <ProtectedRoute>
+              <Perfil/>
+            </ProtectedRoute>
+        }/>
       
       </Routes>
     </BrowserRouter>

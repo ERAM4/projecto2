@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import { useNavigate } from 'react-router-dom';
-import UserService from "../services/userServices";
-  // IMPORTANTE
+import UserService from "../services/userServices"; 
 
 export default function FormularioLogin({ verificarLogin }) {
   const [email, setEmail] = useState("");
@@ -13,7 +12,7 @@ export default function FormularioLogin({ verificarLogin }) {
   const handleSubmit = (e) => {
     e.preventDefault();
 
-    // Validaciones básicas
+    // Validaciones básicas (Igual que antes)
     if (!email.includes("@")) {
       setErrores("El correo debe contener un signo arroba (@).");
       return;
@@ -26,24 +25,27 @@ export default function FormularioLogin({ verificarLogin }) {
 
     setErrores("");
 
-    // 🔥 AQUÍ SE HACE EL LOGIN REAL
-
+    //  LOGIN 
     UserService.loginUsuario({
       correo: email,
       password: clave
     })
       .then((response) => {
         console.log("LOGIN OK:", response.data);
+
+        // Guardamos el token en el localStorage
+        localStorage.setItem("token", response.data.token); 
+
+        // Esta línea la mantenemos para tener los datos del usuario
         localStorage.setItem("usuario", JSON.stringify(response.data));
-        verificarLogin();  // si quieres marcar autenticado en tu app
-        navigate("/"); // redirige donde tú quieras
+        
+        verificarLogin();  // Actualiza el estado de la App
+        navigate("/");     // Redirige al Home
       })
       .catch((error) => {
         console.error("LOGIN ERROR:", error);
         setErrores(error.response?.data || "Error al iniciar sesión");
       });
-
-
   };
 
   const handleReset = () => {
