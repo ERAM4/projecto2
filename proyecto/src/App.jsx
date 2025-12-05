@@ -6,6 +6,7 @@ import Registro from './page/registro'
 import React from 'react'
 import Ayuda from './page/ayuda'
 
+import AdminRoute from './components/AdminRoute';
 import AdminProductos from './page/adminProductos';
 import Perfil from './page/perfil'
 import Silla from './page/silla'
@@ -60,9 +61,9 @@ function App() {
             </ProtectedRoute>
         }/>
         <Route path="/admin-productos" element={
-            <ProtectedRoute>
+              <AdminRoute>
                 <AdminProductos />
-            </ProtectedRoute>
+              </AdminRoute>
         }/>
       
       </Routes>
