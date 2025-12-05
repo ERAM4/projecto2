@@ -37,6 +37,9 @@ export default function paginaInicio() {
     <Link to = "/perfil">
         <button className='btnPerfil'>Perfil</button>
     </Link>
+    <Link to="/admin-productos">
+             <button className='btnCarrito'>⚙️ Admin</button>
+    </Link>
 
         </nav>
     </header>

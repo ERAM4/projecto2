@@ -6,6 +6,7 @@ import Registro from './page/registro'
 import React from 'react'
 import Ayuda from './page/ayuda'
 
+import AdminProductos from './page/adminProductos';
 import Perfil from './page/perfil'
 import Silla from './page/silla'
 import Poleras from './page/poleras'
@@ -56,6 +57,11 @@ function App() {
         <Route path ="/perfil" element={
             <ProtectedRoute>
               <Perfil/>
+            </ProtectedRoute>
+        }/>
+        <Route path="/admin-productos" element={
+            <ProtectedRoute>
+                <AdminProductos />
             </ProtectedRoute>
         }/>
       
